@@ -19,13 +19,14 @@ body{
   margin:0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--text);
-  background: linear-gradient(
-    180deg,
-    #0b1020 0%,
-    #1a1340 35%,
-    #2a1f66 65%,
-    #1a1340 100%
-  );
+
+  background-color:#0b1020;
+  background-image:
+    radial-gradient(1200px 700px at 20% 0%, rgba(139,92,246,.18) 0%, rgba(139,92,246,0) 70%),
+    radial-gradient(1400px 900px at 90% 20%, rgba(167,139,250,.14) 0%, rgba(167,139,250,0) 75%),
+    linear-gradient(180deg, #0b1020 0%, #1a1340 50%, #0b1020 100%);
+  background-attachment: fixed;
+}
 }
 
 a{color:inherit}
@@ -176,7 +177,12 @@ h1{
 .mock-tags em{ font-style:normal; padding:6px 10px; border-radius:999px; background: rgba(34,197,94,.16); border:1px solid rgba(34,197,94,.18); color: var(--muted) }
 
 .section{ padding: 46px 0; }
-.section--alt{ background: rgba(0,0,0,.16); border-top:1px solid rgba(234,240,255,.08); border-bottom:1px solid rgba(234,240,255,.08); }
+.section--alt{
+  background: transparent;
+  border-top: 0;
+  border-bottom: 0;
+}
+
 
 h2{
   margin:0 0 10px;
