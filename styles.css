@@ -19,10 +19,13 @@ body{
   margin:0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--text);
-  background:
-    radial-gradient(1000px 600px at 20% -10%, rgba(139,92,246,.35), transparent 60%),
-    radial-gradient(1000px 600px at 90% 10%, rgba(34,197,94,.22), transparent 55%),
-    linear-gradient(180deg, var(--bg), var(--bg2));
+  background: linear-gradient(
+    180deg,
+    #0b1020 0%,
+    #1a1340 35%,
+    #2a1f66 65%,
+    #1a1340 100%
+  );
 }
 
 a{color:inherit}
