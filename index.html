@@ -1,58 +1,239 @@
 <!doctype html>
-<li>Drive access is limited to ClassSeats files via <code>drive.file</code></li>
-</ul>
-</div>
-<div>
-<h3>Read the policy</h3>
-<p>Full details are in the Privacy Policy.</p>
-<p><a class="button button--ghost" href="./privacy.html">Privacy Policy</a></p>
-</div>
-</div>
-</div>
-</section>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ClassSeats helps teachers build seating charts, manage attendance, and create student groupings—fast. Save locally or sync to your own Google Drive." />
 
+    <meta property="og:title" content="ClassSeats" />
+    <meta property="og:description" content="Seating charts, attendance, and groupings for teachers. Save locally or sync to your own Google Drive." />
+    <meta property="og:type" content="website" />
 
-<section id="contact" class="section section--alt">
-<div class="container">
-<h2>Contact</h2>
-<p class="subhead">Want to beta test, ask questions, or talk rollout? Email is easiest.</p>
+    <title>ClassSeats — Seating charts made sane</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
-<div class="contact-card">
-<div>
-<p class="muted">Email</p>
-<p class="contact-email"><a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
-<p class="muted small">Tip: use something like <code>support@classseats.com</code> when you’re ready.</p>
-</div>
-<div class="contact-right">
-<p class="muted">Also include this on the Google OAuth consent screen.</p>
-<p class="small">(Google verification reviewers love when the contact email matches your website.)</p>
-</div>
-</div>
-</div>
-</section>
-</main>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🪑</text></svg>" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./">
+          <span class="brand-mark" aria-hidden="true">🪑</span>
+          <span class="brand-name">ClassSeats</span>
+        </a>
 
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+          <a href="#privacy">Privacy</a>
+          <a class="button button--ghost" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-<footer class="site-footer">
-<div class="container footer-inner">
-<div>
-<div class="brand brand--footer">
-<span class="brand-mark" aria-hidden="true">🪑</span>
-<span class="brand-name">ClassSeats</span>
-</div>
-<p class="muted small">© <span id="y"></span> ClassSeats. All rights reserved.</p>
-</div>
-<div class="footer-links">
-<a href="./privacy.html">Privacy Policy</a>
-<a href="#contact">Contact</a>
-</div>
-</div>
-</footer>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Built for teachers • Works offline • Optional Google Drive sync</p>
+            <h1>Seating charts made sane.</h1>
+            <p class="lead">
+              ClassSeats helps you build seating charts, take attendance, and create student groupings—fast.
+              Save locally or sync to <strong>your own</strong> Google Drive.
+            </p>
 
+            <div class="cta-row">
+              <a class="button" href="#contact">Get early access</a>
+              <a class="button button--ghost" href="#how">See how it works</a>
+            </div>
 
-<script>
-document.getElementById('y').textContent = new Date().getFullYear();
-</script>
-</body>
+            <div class="trust-row" role="list">
+              <div class="pill" role="listitem">No ClassSeats servers</div>
+              <div class="pill" role="listitem">Your files stay on your device / your Drive</div>
+              <div class="pill" role="listitem">Uses Google Drive scope: <code>drive.file</code></div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Preview card">
+            <div class="hero-card__top">
+              <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+              <span class="hero-card__title">ClassSeats</span>
+            </div>
+            <div class="hero-card__body">
+              <div class="mock-grid">
+                <div class="mock-panel">
+                  <div class="mock-h">Periods</div>
+                  <div class="mock-lines">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="mock-panel">
+                  <div class="mock-h">Layout</div>
+                  <div class="mock-desks">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="mock-panel">
+                  <div class="mock-h">Attendance</div>
+                  <div class="mock-lines">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="mock-panel">
+                  <div class="mock-h">Groups</div>
+                  <div class="mock-tags">
+                    <em>Team A</em><em>Team B</em><em>Team C</em>
+                  </div>
+                </div>
+              </div>
+              <p class="muted small" style="margin-top:12px;">(Replace this mock preview with real screenshots whenever you’re ready.)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2>What ClassSeats helps you do</h2>
+          <p class="subhead">The daily stuff that eats time—done faster, with fewer headaches.</p>
+
+          <div class="cards">
+            <article class="card">
+              <h3>Seating charts</h3>
+              <p>Create layouts, move students instantly, and iterate without starting over.</p>
+            </article>
+            <article class="card">
+              <h3>Attendance</h3>
+              <p>Quick, repeatable attendance workflows that don’t derail your first five minutes.</p>
+            </article>
+            <article class="card">
+              <h3>Groupings</h3>
+              <p>Make groups with constraints and common sense—because random isn’t always fair.</p>
+            </article>
+            <article class="card">
+              <h3>History & reports</h3>
+              <p>Keep track of changes and export what you need when admin asks… again.</p>
+            </article>
+            <article class="card">
+              <h3>Works offline</h3>
+              <p>Use it with no internet. Your data stays available when Wi‑Fi decides to quit.</p>
+            </article>
+            <article class="card">
+              <h3>Optional Drive sync</h3>
+              <p>Sync files across devices using your own Google Drive—no ClassSeats server required.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="section section--alt">
+        <div class="container">
+          <h2>How Google Drive sync works</h2>
+          <div class="two-col">
+            <div>
+              <ol class="steps">
+                <li>
+                  <strong>You choose Drive sync.</strong>
+                  <span>ClassSeats works with local storage by default. Drive is optional.</span>
+                </li>
+                <li>
+                  <strong>You sign in to Google.</strong>
+                  <span>ClassSeats requests the limited <code>drive.file</code> permission.</span>
+                </li>
+                <li>
+                  <strong>You save ClassSeats files to Drive.</strong>
+                  <span>Only files created by ClassSeats (or you explicitly open with ClassSeats) are accessible.</span>
+                </li>
+                <li>
+                  <strong>You can disconnect anytime.</strong>
+                  <span>Disconnecting stops Drive access; the app continues using local storage.</span>
+                </li>
+              </ol>
+            </div>
+            <div class="callout">
+              <h3>Why this matters</h3>
+              <p>
+                ClassSeats is designed to keep classroom data under the teacher’s control.
+                Sync is handled via the teacher’s own Google Drive.
+              </p>
+              <ul class="bullets">
+                <li>No ClassSeats backend servers</li>
+                <li>No selling or sharing user data</li>
+                <li>Limited Drive scope (<code>drive.file</code>)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="privacy" class="section">
+        <div class="container">
+          <h2>Privacy that makes sense for schools</h2>
+          <p class="subhead">
+            ClassSeats stores your data locally on your device and/or in your own Google Drive (if enabled).
+            We don’t run servers that collect your classroom data.
+          </p>
+
+          <div class="privacy-box">
+            <div>
+              <h3>Quick facts</h3>
+              <ul class="bullets">
+                <li>No ClassSeats servers storing classroom data</li>
+                <li>Local-first; Drive sync is optional</li>
+                <li>Drive access is limited to ClassSeats files via <code>drive.file</code></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Read the policy</h3>
+              <p>Full details are in the Privacy Policy.</p>
+              <p><a class="button button--ghost" href="./privacy.html">Privacy Policy</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--alt">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="subhead">Want to beta test, ask questions, or talk rollout? Email is easiest.</p>
+
+          <div class="contact-card">
+            <div>
+              <p class="muted">Email</p>
+              <p class="contact-email"><a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+              <p class="muted small">Tip: use something like <code>support@classseats.com</code> when you’re ready.</p>
+            </div>
+            <div class="contact-right">
+              <p class="muted">Also include this on the Google OAuth consent screen.</p>
+              <p class="small">(Google verification reviewers love when the contact email matches your website.)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand brand--footer">
+            <span class="brand-mark" aria-hidden="true">🪑</span>
+            <span class="brand-name">ClassSeats</span>
+          </div>
+          <p class="muted small">© <span id="y"></span> ClassSeats. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
