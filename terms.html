@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./favicon.ico" />
   </head>
+
   <body>
     <header class="site-header">
       <div class="container header-inner">
@@ -34,7 +36,7 @@
     <main class="section">
       <div class="container prose">
         <h1>Terms of Service</h1>
-        <p class="muted"><strong>Last updated:</strong> <span class="last-updated">December 13, 2025</span></p>
+        <p class="muted"><strong>Last updated:</strong> <span class="last-updated">December 15, 2025</span></p>
 
         <p>
           These Terms of Service ("Terms") govern your use of ClassSeats. By accessing or using ClassSeats, you agree to these Terms.
@@ -47,8 +49,9 @@
           student groupings, attendance records, and related classroom organization data.
         </p>
         <p>
-          ClassSeats operates as a <strong>local-first application</strong>. Data is stored locally on your device and, if you choose to
-          enable it, within your own Google Drive account. ClassSeats does not operate backend servers that store classroom data.
+          ClassSeats operates as a <strong>local-first application</strong>. Classroom data is stored on the user’s device and, if the
+          user chooses to enable it, within the user’s own Google Drive account for cross-device synchronization. ClassSeats does not
+          operate backend servers that store classroom data.
         </p>
 
         <h2>2. Eligibility</h2>
@@ -60,27 +63,29 @@
         <h2>3. User Data and Privacy</h2>
         <p>Your use of ClassSeats is subject to the ClassSeats Privacy Policy.</p>
         <ul>
-          <li>ClassSeats does not sell or monetize user data</li>
-          <li>Classroom data remains under the user’s control</li>
-          <li>Data is stored locally and/or in the user’s own Google Drive</li>
+          <li>ClassSeats does not sell or monetize user data.</li>
+          <li>Classroom data remains under the user’s control.</li>
+          <li>ClassSeats does not operate servers that store student data.</li>
         </ul>
-        <p>You are responsible for safeguarding access to your device and Google account.</p>
+        <p>You are responsible for safeguarding access to your device and (if used) your Google account.</p>
 
-        <h2>4. Google Drive Integration</h2>
-        <p>If you choose to connect Google Drive:</p>
+        <h2>4. Optional Google Drive Sync</h2>
+        <p>
+          Google Drive integration is optional. If enabled by the user, ClassSeats uses the Google Drive API with the
+          <code>drive.file</code> scope. This scope limits access to files created by ClassSeats or explicitly selected by the user.
+        </p>
         <ul>
-          <li>ClassSeats requests limited access using the Google Drive <code>drive.file</code> scope</li>
-          <li>Only files created by ClassSeats or explicitly selected by you are accessible</li>
-          <li>You may disconnect Google Drive at any time within the app</li>
+          <li>ClassSeats does not request broad Drive access (no access to unrelated Drive files).</li>
+          <li>Users may disconnect Google Drive at any time within the app.</li>
+          <li>Disconnecting Google Drive stops Drive access; the app continues using local storage.</li>
         </ul>
-        <p>Disconnecting Google Drive stops all Drive access and does not prevent continued use of ClassSeats with local storage.</p>
 
         <h2>5. Acceptable Use</h2>
         <p>You agree to use ClassSeats only for lawful purposes and in accordance with applicable laws and regulations.</p>
         <ul>
-          <li>Do not attempt to access data that does not belong to you</li>
-          <li>Do not reverse engineer or disrupt the application</li>
-          <li>Do not use the service in violation of applicable laws</li>
+          <li>Do not attempt to access data that does not belong to you.</li>
+          <li>Do not reverse engineer or disrupt the application.</li>
+          <li>Do not use the service in violation of applicable laws.</li>
         </ul>
 
         <h2>6. Availability and Changes</h2>
@@ -127,7 +132,6 @@
             <span class="brand-name">ClassSeats</span>
           </div>
           <p class="muted small">© <span id="y"></span> ClassSeats. All rights reserved.</p>
-          <p class="muted small">Google Drive is a trademark of Google LLC.</p>
         </div>
         <div class="footer-links">
           <a href="./">Home</a>
