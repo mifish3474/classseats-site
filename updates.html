@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="ClassSeats updates — occasional, practical notes on new features, sync improvements, and early access for educators."
+    />
+
+    <meta property="og:title" content="ClassSeats Updates" />
+    <meta
+      property="og:description"
+      content="Occasional, practical updates about ClassSeats — features, sync improvements, and early access."
+    />
+    <meta property="og:type" content="website" />
+
+    <title>ClassSeats — Updates</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🪑</text></svg>"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./">
+          <span class="brand-mark" aria-hidden="true">🪑</span>
+          <span class="brand-name">ClassSeats</span>
+        </a>
+
+        <nav class="nav">
+          <a href="./#features">Features</a>
+          <a href="./#how">How it works</a>
+          <a href="./#privacy">Privacy</a>
+          <a href="./updates.html" aria-current="page">Updates</a>
+          <a class="button button--ghost" href="./#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container prose">
+          <h1>ClassSeats updates</h1>
+          <p class="subhead">
+            Occasional notes about new features, sync improvements, and early access opportunities for educators.
+            No spam. No “10x your classroom” nonsense. Just the useful stuff. 🙂
+          </p>
+
+          <div class="signup-card">
+            <h2 style="margin-top: 0">Get updates</h2>
+
+            <form
+              action="https://buttondown.com/api/emails/embed-subscribe/ClassSeats"
+              method="post"
+              class="embeddable-buttondown-form"
+            >
+              <label for="bd-email">Email address</label>
+              <div class="signup-row">
+                <input type="email" name="email" id="bd-email" placeholder="you@school.org" required />
+                <input type="hidden" value="1" name="embed" />
+                <!-- Tagging is supported by Buttondown via hidden `tag` inputs; may require enabling Tags on your plan -->
+                <input type="hidden" name="tag" value="early-access" />
+                <input type="submit" value="Subscribe" />
+              </div>
+
+              <p class="muted small" style="margin-top: 10px">
+                You’ll get a confirmation email. Unsubscribe anytime.
+              </p>
+
+              <p class="muted small" style="margin-top: 10px">
+                Questions? Email <a href="mailto:hello@classseats.com">hello@classseats.com</a>.
+              </p>
+
+              <p class="small" style="margin-top: 12px">
+                <a href="https://buttondown.com/refer/ClassSeats" target="_blank" rel="noreferrer">
+                  Powered by Buttondown.
+                </a>
+              </p>
+            </form>
+          </div>
+
+          <p class="toplink"><a href="./">← Back to ClassSeats</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand brand--footer">
+            <span class="brand-mark" aria-hidden="true">🪑</span>
+            <span class="brand-name">ClassSeats</span>
+          </div>
+          <p class="muted small">© <span id="y"></span> ClassSeats. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./">Home</a>
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
+          <a href="./#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
