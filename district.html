@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="District & IT information for ClassSeats — local-first classroom management with optional Google Drive sync."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClassSeats — District & IT</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./">
+          <span class="brand-mark" aria-hidden="true">🪑</span>
+          <span class="brand-name">ClassSeats</span>
+        </a>
+
+        <nav class="nav">
+          <a href="./#features">Features</a>
+          <a href="./#how">How it works</a>
+          <a href="./#privacy">Privacy</a>
+          <a class="nav-active" href="./district.html">District IT</a>
+          <a href="./updates.html">Updates</a>
+          <a class="button button--ghost" href="./#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container prose">
+        <h1>District & IT</h1>
+        <p class="subhead">
+          ClassSeats is designed to be <strong>local-first</strong> and <strong>privacy-first</strong>:
+          no ClassSeats accounts required, no ClassSeats servers storing student data, and optional Google Drive sync that stores
+          files in the educator’s own Drive.
+        </p>
+
+        <div class="callout" style="margin: 18px 0 22px">
+          <div>
+            <h3 style="margin-top: 0">Quick summary (the part you can paste into an IT ticket)</h3>
+            <ul class="bullets">
+              <li><strong>Data storage:</strong> on the user’s device and/or the user’s Google Drive (optional).</li>
+              <li><strong>No ClassSeats servers</strong> used to store student data.</li>
+              <li><strong>Google Drive scope:</strong> <code>drive.file</code> (file-level access only for files the app creates or the user selects).</li>
+              <li><strong>Authentication:</strong> Google OAuth (only if Drive sync is enabled by the user).</li>
+              <li><strong>Network dependency:</strong> Core app works offline; Drive sync requires internet.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>1) Data model & file format</h2>
+        <p>
+          ClassSeats stores classroom data in a single JSON file per class. The file is owned and controlled by the educator (or district,
+          depending on your Google Workspace configuration). The application is built to avoid silent reinterpretation of old files.
+        </p>
+        <ul>
+          <li>Files are saved locally by default.</li>
+          <li>If Drive sync is enabled, the file is stored in the user’s Drive and synced across devices.</li>
+          <li>ClassSeats does not copy those files to any ClassSeats database.</li>
+        </ul>
+
+        <h2>2) Google Drive access</h2>
+        <p>
+          Drive sync is optional. When enabled, ClassSeats uses the Google Drive API with the <code>drive.file</code> scope.
+          That scope limits access to files the app creates or that the user explicitly selects via the picker/open flow.
+        </p>
+        <ul>
+          <li>ClassSeats does not request broad Drive access (no “read all files” scope).</li>
+          <li>ClassSeats cannot browse or access unrelated Drive content.</li>
+          <li>Disconnecting Drive stops Drive access immediately; the app continues using local storage.</li>
+        </ul>
+
+        <h2>3) FERPA / student privacy posture</h2>
+        <p>
+          ClassSeats is intentionally designed to avoid becoming a “student data custodian.” The goal is to keep data under the teacher’s
+          (or district’s) existing controls:
+        </p>
+        <ul>
+          <li>Data stays on the educator’s device and/or their Drive.</li>
+          <li>No student data is transmitted to ClassSeats servers (because there aren’t any for storage).</li>
+          <li>District policy controls still apply (device security, account access, Drive sharing restrictions, etc.).</li>
+        </ul>
+
+        <h2>4) Deployment notes</h2>
+        <ul>
+          <li><strong>Web/PWA:</strong> Can be used in a browser and installed as a PWA where supported.</li>
+          <li><strong>Desktop:</strong> A desktop build may be available depending on your rollout approach.</li>
+          <li><strong>Offline use:</strong> Core functionality works offline. Sync requires internet.</li>
+        </ul>
+
+        <h2>5) Security & control questions (and direct answers)</h2>
+        <h3>Can we block Google Drive?</h3>
+        <p>
+          Yes. If you block Drive access or OAuth consent in your environment, ClassSeats still works locally; users simply won’t be able
+          to use Drive sync.
+        </p>
+
+        <h3>Can we audit what gets stored?</h3>
+        <p>
+          Yes. The data is stored as JSON files (local and/or Drive). Districts can apply their normal controls for Drive file retention,
+          sharing, and DLP policies.
+        </p>
+
+        <h3>Does ClassSeats run analytics on student data?</h3>
+        <p>
+          No. ClassSeats is built to avoid ingesting student content into third-party analytics systems.
+        </p>
+
+        <h2>6) Support</h2>
+        <p>
+          For district questions, pilot discussions, or rollout planning:
+          <br />
+          Email: <a href="mailto:support@classseats.com">support@classseats.com</a>
+        </p>
+
+        <p class="toplink"><a href="./">← Back to ClassSeats</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand brand--footer">
+            <span class="brand-mark" aria-hidden="true">🪑</span>
+            <span class="brand-name">ClassSeats</span>
+          </div>
+          <p class="muted small">© <span id="y"></span> ClassSeats. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./">Home</a>
+          <a href="./district.html">District IT</a>
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
+          <a href="./updates.html">Updates</a>
+          <a href="./#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
