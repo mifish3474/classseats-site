@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./favicon.ico" />
   </head>
+
   <body>
     <header class="site-header">
       <div class="container header-inner">
@@ -33,36 +35,39 @@
     <main class="section">
       <div class="container prose">
         <h1>Privacy Policy</h1>
-        <p class="muted"><strong>Last updated:</strong> <span class="last-updated">December 13, 2025</span></p>
+        <p class="muted"><strong>Last updated:</strong> <span class="last-updated">December 15, 2025</span></p>
 
         <p>
-          ClassSeats is a classroom management tool designed for teachers to create and manage seating charts, student groupings,
-          attendance, and related classroom organization tasks. Your privacy — and the privacy of your students — is taken seriously.
-          This policy explains what data ClassSeats accesses, how it is used, and how it is protected.
+          ClassSeats is a classroom management tool for educators to create and manage seating charts, student groupings, attendance,
+          and related classroom organization tasks. This policy explains what data ClassSeats accesses, how it is used, and how it is protected.
         </p>
 
         <h2>1. Overview</h2>
         <ul>
-          <li>ClassSeats does <strong>not</strong> operate any backend servers.</li>
+          <li>ClassSeats does <strong>not</strong> operate backend servers that store student data.</li>
           <li>ClassSeats does <strong>not</strong> sell, share, or monetize user data.</li>
           <li>
-            All classroom data is stored <strong>locally on your device</strong> and/or <strong>in your own Google Drive</strong>, depending on your chosen settings.
+            Classroom data is stored <strong>locally on the user’s device</strong> and/or <strong>in the user’s own Google Drive</strong>,
+            depending on the user’s settings.
           </li>
-          <li>Student data is not transmitted to ClassSeats or any third party.</li>
+          <li>Student data is not used for advertising or analytics profiling.</li>
         </ul>
-        <p>If you disconnect Google Drive access, ClassSeats continues to function using local storage only.</p>
+        <p>
+          If you do not enable Drive sync, ClassSeats stores data locally only. If you disconnect Google Drive access, ClassSeats continues
+          to function using local storage.
+        </p>
 
         <h2>2. Information ClassSeats Accesses</h2>
 
-        <h3>A. Google Account Information</h3>
+        <h3>A. Google Account Information (only if Drive sync is enabled)</h3>
         <p>If you choose to connect Google Drive, ClassSeats requests limited access to:</p>
         <ul>
           <li>Your Google account email address (used only to identify the signed-in user)</li>
-          <li>Files created or explicitly selected by ClassSeats in your Google Drive</li>
+          <li>Files created by ClassSeats or explicitly selected by you in Google Drive</li>
         </ul>
         <p>
           ClassSeats uses the Google Drive <code>drive.file</code> scope, which allows access only to files the app creates or that you
-          explicitly open using the app. ClassSeats cannot view, modify, or delete any other files in your Google Drive.
+          explicitly open using the app. ClassSeats cannot view, modify, or delete other files in your Google Drive.
         </p>
 
         <h3>B. Classroom Data</h3>
@@ -75,48 +80,54 @@
           <li>Teacher-entered notes or alerts</li>
         </ul>
         <p>
-          This data is stored locally on your device and/or stored in files saved to your own Google Drive. ClassSeats does not store this
-          data on external servers and does not have access to it.
+          This data is stored locally on the user’s device and/or stored in files saved to the user’s own Google Drive (if Drive sync is enabled).
+          ClassSeats does not operate servers that store this data.
         </p>
 
         <h2>3. How Information Is Used</h2>
-        <p>ClassSeats uses data only to provide core application features, including:</p>
+        <p>ClassSeats uses information only to provide user-initiated features such as:</p>
         <ul>
           <li>Saving and loading classroom files</li>
-          <li>Synchronizing files between your devices (when Google Drive is enabled)</li>
-          <li>Displaying your data within the app</li>
+          <li>Displaying classroom data within the app</li>
+          <li>Synchronizing files between the user’s devices (when Drive sync is enabled)</li>
         </ul>
-        <p>Data is never used for advertising, analytics profiling, or marketing.</p>
+        <p>
+          Data is not used for advertising, tracking, behavioral analytics, or analytics profiling based on student information.
+        </p>
 
         <h2>4. Data Storage &amp; Security</h2>
         <ul>
-          <li>Local data is stored on your device using standard browser or application storage mechanisms.</li>
-          <li>Google Drive data is stored entirely within your own Google Drive account.</li>
-          <li>ClassSeats does not maintain copies of your files.</li>
+          <li>Local data is stored on the user’s device using standard browser or application storage mechanisms.</li>
+          <li>When enabled, Google Drive data is stored entirely within the user’s own Google Drive account.</li>
+          <li>ClassSeats does not maintain copies of classroom files on ClassSeats servers.</li>
         </ul>
         <p>
-          Because data remains under your control, you may delete, export, or back up your files at any time using standard device or
+          Because data remains under the user’s control, users may delete, export, or back up files at any time using standard device or
           Google Drive tools.
         </p>
 
         <h2>5. Data Sharing</h2>
-        <p>ClassSeats does not share data with advertisers, third-party vendors, or analytics platforms that access classroom data.</p>
-        <p>Data is shared only when you explicitly choose to share files from your own Google Drive.</p>
+        <p>
+          ClassSeats does not share classroom data with advertisers, third-party vendors, or analytics platforms that access classroom data.
+          Data is shared only when a user explicitly chooses to share files from their own device or Google Drive.
+        </p>
 
         <h2>6. FERPA and Student Privacy</h2>
-        <p>ClassSeats is designed to support FERPA-aligned workflows:</p>
+        <p>ClassSeats is designed to support FERPA-aligned classroom workflows:</p>
         <ul>
-          <li>Student information is controlled solely by the teacher.</li>
-          <li>Data remains local or in the teacher’s own Google Drive.</li>
-          <li>No student data is transmitted to ClassSeats or external servers.</li>
+          <li>Student information is controlled solely by the educator (or district-managed account).</li>
+          <li>Data remains local or in the educator’s own Google Drive.</li>
+          <li>No student data is transmitted to ClassSeats servers for storage.</li>
         </ul>
-        <p>Teachers are responsible for managing access to their devices and Google Drive accounts in accordance with school or district policies.</p>
+        <p>
+          Educators are responsible for managing access to their devices and Google accounts in accordance with school or district policies.
+        </p>
 
         <h2>7. Google API Services Disclosure</h2>
         <p>
-          ClassSeats’ use of information received from Google APIs adheres to the Google API Services User Data Policy, including the
-          Limited Use requirements. Google user data is used only to provide and improve user-facing features and is not transferred to
-          third parties.
+          ClassSeats’ use of information received from Google APIs complies with the Google API Services User Data Policy, including the
+          Limited Use requirements. Google user data is used solely to provide user-initiated file storage and synchronization features
+          and is not transferred to third parties.
         </p>
 
         <h2>8. Disconnecting Google Drive</h2>
@@ -130,8 +141,8 @@
         <h2>9. Children’s Privacy</h2>
         <p>
           ClassSeats is intended for use by educators. ClassSeats does not knowingly collect personal information directly from children.
-          Any student data entered into the app is provided by the teacher for classroom management purposes and remains under the
-          teacher’s control.
+          Any student data entered into the app is provided by the educator for classroom management purposes and remains under the
+          educator’s control.
         </p>
 
         <h2>10. Changes to This Policy</h2>
@@ -158,7 +169,6 @@
             <span class="brand-name">ClassSeats</span>
           </div>
           <p class="muted small">© <span id="y"></span> ClassSeats. All rights reserved.</p>
-          <p class="muted small">Google Drive is a trademark of Google LLC.</p>
         </div>
         <div class="footer-links">
           <a href="./">Home</a>
