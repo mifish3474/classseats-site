@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="ClassSeats is a teacher-friendly seating chart tool with attendance and groupings. Local-first, optional Google Drive sync."
+      content="ClassSeats is a teacher-friendly classroom tool for seating charts, attendance, and groupings. Local-first, works offline, optional sync."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ClassSeats — Seating charts made sane</title>
@@ -43,11 +43,13 @@
       <section class="hero">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow">Built for teachers • Works offline • Optional Google Drive sync</p>
+            <p class="eyebrow">Built for real classrooms • Works offline • Desktop, mobile, and web</p>
+
             <h1>Seating charts made sane.</h1>
+
             <p class="lead">
-              ClassSeats helps you build seating charts, take attendance, and create student groupings—fast.
-              Save locally or sync to <strong>your own</strong> Google Drive.
+              ClassSeats is a fast, teacher-friendly classroom management tool for seating charts, attendance, and student groupings —
+              built to work offline, across devices, and without sending your student data to someone else’s server.
             </p>
 
             <div class="cta-row">
@@ -60,9 +62,9 @@
             </p>
 
             <div class="trust-row" role="list">
-              <div class="pill" role="listitem">No ClassSeats servers</div>
-              <div class="pill" role="listitem">Your files stay on your device / your Drive</div>
-              <div class="pill" role="listitem">Uses Google Drive scope: <code>drive.file</code></div>
+              <div class="pill" role="listitem">No ClassSeats servers storing student data</div>
+              <div class="pill" role="listitem">Works offline</div>
+              <div class="pill" role="listitem">Optional cross-device sync</div>
             </div>
           </div>
 
@@ -110,33 +112,38 @@
         <div class="container">
           <h2>Designed for real classrooms.</h2>
           <p class="subhead">
-            Fast workflows, simple data files, and optional Drive sync—without running your class through someone else’s server.
+            Fast workflows, simple class files, and a setup that doesn’t force your classroom data into somebody else’s database.
           </p>
 
           <div class="grid">
             <div class="card">
               <h3>Seating charts</h3>
-              <p>Create layouts quickly and move students with minimal clicks.</p>
+              <p>Design classroom layouts quickly and move students with minimal clicks.</p>
             </div>
+
             <div class="card">
               <h3>Attendance</h3>
-              <p>Mark present/absent/tardy and keep history.</p>
+              <p>Take daily attendance and keep a clear history without extra steps.</p>
             </div>
+
             <div class="card">
               <h3>Group maker</h3>
-              <p>Generate randomized or balanced groups in seconds.</p>
+              <p>Create random or balanced groups in seconds — no spreadsheets required.</p>
             </div>
+
             <div class="card">
-              <h3>Local-first</h3>
-              <p>Works without internet. Save locally if you prefer.</p>
+              <h3>Works offline</h3>
+              <p>ClassSeats works without internet. Your class doesn’t stop when Wi-Fi does.</p>
             </div>
+
             <div class="card">
-              <h3>Optional Google Drive sync</h3>
-              <p>Sync your class files to your own Drive (scope: <code>drive.file</code>).</p>
+              <h3>Mobile access</h3>
+              <p>View and update your class from your phone or tablet using the mobile version of ClassSeats.</p>
             </div>
+
             <div class="card">
-              <h3>No ClassSeats servers</h3>
-              <p>Your data stays with you—on your device and/or your Drive.</p>
+              <h3>Your data stays yours</h3>
+              <p>Classroom data is stored locally on your device. Optional cloud sync is user-controlled.</p>
             </div>
           </div>
         </div>
@@ -150,24 +157,36 @@
               <div class="step-num">1</div>
               <div>
                 <h3>Create or import a class file</h3>
-                <p>ClassSeats stores your class data in a JSON file.</p>
+                <p>ClassSeats stores classroom data in a single JSON file per class.</p>
               </div>
             </div>
+
             <div class="step">
               <div class="step-num">2</div>
               <div>
                 <h3>Work locally</h3>
-                <p>Make seating, attendance, and grouping changes quickly—no internet required.</p>
+                <p>Make seating, attendance, and grouping changes quickly — no internet required.</p>
               </div>
             </div>
+
             <div class="step">
               <div class="step-num">3</div>
               <div>
-                <h3>Optionally connect Google Drive</h3>
-                <p>Sync your files to Drive for backup and cross-device use (file-level scope: <code>drive.file</code>).</p>
+                <h3>Optionally enable cross-device sync</h3>
+                <p>
+                  If you choose, ClassSeats can sync your class file using your own Google Drive so you can work across devices.
+                  This is optional — the app works fully without it.
+                </p>
               </div>
             </div>
           </div>
+
+          <p class="muted small" style="margin-top: 14px">
+            District/IT details (including scope and deployment notes) are available on the District IT page.
+          </p>
+          <p style="margin-top: 10px">
+            <a class="button button--ghost" href="./district.html">District IT</a>
+          </p>
         </div>
       </section>
 
@@ -175,32 +194,36 @@
         <div class="container">
           <h2>Privacy-first by design</h2>
           <p class="subhead">
-            ClassSeats does not run your classes through a ClassSeats database. Your student data stays under your control.
+            ClassSeats is designed to keep classroom data under the teacher’s control.
+            There are no ClassSeats servers storing student information, and student data is not used for advertising or analytics profiling.
           </p>
 
           <div class="grid grid--2">
             <div class="card">
-              <h3>Local-first</h3>
-              <p>Data is stored locally on your device unless you choose to sync.</p>
+              <h3>Local-first storage</h3>
+              <p>Classroom data is stored locally on your device unless you choose to sync.</p>
             </div>
+
             <div class="card">
-              <h3>Your Drive, your files</h3>
-              <p>When connected, ClassSeats uses your Google Drive to store your JSON files.</p>
+              <h3>Optional cloud sync</h3>
+              <p>If enabled, your class file is stored in your own Google Drive for cross-device use.</p>
             </div>
+
             <div class="card">
-              <h3>Minimal scope</h3>
-              <p>Uses Google Drive scope <code>drive.file</code> (file-level access for your ClassSeats files).</p>
+              <h3>Minimal access</h3>
+              <p>When Drive sync is enabled, ClassSeats uses the <code>drive.file</code> scope (file-level access).</p>
             </div>
+
             <div class="card">
-              <h3>No ClassSeats servers</h3>
-              <p>ClassSeats does not store your student data on its own servers.</p>
+              <h3>No ClassSeats data warehouse</h3>
+              <p>ClassSeats does not store your student data on ClassSeats-owned servers.</p>
             </div>
           </div>
 
           <div class="callout">
             <div>
-              <h3>Read the policy</h3>
-              <p>Full details are in the Privacy Policy.</p>
+              <h3>Read the full policy</h3>
+              <p>Details about storage, Drive access, and data handling are explained in the Privacy Policy.</p>
               <p><a class="button button--ghost" href="./privacy.html">Privacy Policy</a></p>
             </div>
           </div>
@@ -224,7 +247,9 @@
               <p style="margin-top: 0">
                 For district/IT questions, see <a href="./district.html">District IT</a>.
               </p>
-              <p style="margin-bottom: 0">If you’re reporting a sync issue, include device + browser, and what you expected vs what happened.</p>
+              <p style="margin-bottom: 0">
+                If you’re reporting a sync issue, include device + browser, and what you expected vs what happened.
+              </p>
             </div>
           </div>
         </div>
@@ -239,7 +264,6 @@
             <span class="brand-name">ClassSeats</span>
           </div>
           <p class="muted small">© <span id="y"></span> ClassSeats. All rights reserved.</p>
-          <p class="muted small">Google Drive is a trademark of Google LLC.</p>
         </div>
         <div class="footer-links">
           <a href="./">Home</a>
