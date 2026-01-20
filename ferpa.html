@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ClassSeats FERPA alignment and student data handling overview." />
+    <title>ClassSeats — FERPA & Student Data Handling</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./favicon.ico" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./">
+          <span class="brand-mark" aria-hidden="true">🪑</span>
+          <span class="brand-name">ClassSeats</span>
+        </a>
+        <nav class="nav">
+          <a href="./#features">Features</a>
+          <a href="./#how">How it works</a>
+          <a href="./#privacy">Privacy</a>
+          <a class="nav-active" href="./ferpa.html">FERPA</a>
+          <a href="./terms.html">Terms</a>
+          <a href="./district.html">District IT</a>
+          <a href="./updates.html">Updates</a>
+          <a class="button button--ghost" href="./#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container prose">
+        <h1>FERPA & Student Data Handling — ClassSeats</h1>
+
+        <h2>Overview</h2>
+        <p>
+          ClassSeats is a local-first classroom management tool designed for educators to manage seating charts, attendance, and student
+          groupings while keeping student data under the control of the educator and within existing school or district systems.
+        </p>
+        <p>
+          ClassSeats is intentionally designed without ClassSeats-hosted student data servers. Student information remains on the educator’s
+          device and/or within the Google Drive account chosen by the educator.
+        </p>
+
+        <h2>FERPA Alignment</h2>
+        <p>ClassSeats is designed to support FERPA-aligned instructional workflows.</p>
+        <ul>
+          <li>ClassSeats does not independently collect student information.</li>
+          <li>ClassSeats does not take custody of education records.</li>
+          <li>ClassSeats does not store student data on ClassSeats-controlled servers.</li>
+          <li>All student data is entered, stored, and controlled by the educator using the application.</li>
+          <li>ClassSeats functions as a teacher-directed instructional tool and operates only at the direction of the educator.</li>
+        </ul>
+
+        <h2>School Official Context</h2>
+        <p>
+          ClassSeats does not operate as a centralized student information system and does not receive or host education records.
+        </p>
+        <p>
+          When used in a school environment, ClassSeats operates under the authority of the educator and within the permissions of the
+          account and device used. ClassSeats does not independently access, review, or redistribute student data and does not exercise
+          control over education records.
+        </p>
+
+        <h2>Data Storage & Control</h2>
+        <h3>Local storage</h3>
+        <p>Classroom data is stored locally on the educator’s device by default.</p>
+
+        <h3>Optional Google Drive sync</h3>
+        <p>If enabled by the educator, classroom files are stored in the educator’s chosen Google Drive account for cross-device use.</p>
+
+        <h3>No ClassSeats servers</h3>
+        <p>ClassSeats does not copy, transmit, or store classroom data on ClassSeats-owned servers.</p>
+
+        <h3>Data ownership</h3>
+        <p>Classroom files are owned and controlled by the educator.</p>
+        <p>
+          If a district-managed Google Workspace account is used, district policies governing that account (including sharing, retention,
+          and security controls) apply.
+        </p>
+
+        <h2>Google Drive Access (Optional)</h2>
+        <p>If Google Drive sync is enabled, ClassSeats uses the Google Drive API with the drive.file scope.</p>
+        <p>This scope:</p>
+        <ul>
+          <li>Limits access to files created by ClassSeats or explicitly selected by the educator</li>
+          <li>Does not permit browsing or access to unrelated Drive content</li>
+          <li>Operates entirely within the permissions and policies of the Google account used</li>
+        </ul>
+        <p>ClassSeats does not override or bypass Google Workspace controls applied to the account.</p>
+        <p>If Google Drive sync is not enabled, ClassSeats operates using local storage only.</p>
+
+        <h2>Student Accounts & Authentication</h2>
+        <ul>
+          <li>Students do not create accounts in ClassSeats.</li>
+          <li>Students do not log in or authenticate.</li>
+          <li>Authentication (Google OAuth) is used only when an educator enables Google Drive sync.</li>
+        </ul>
+
+        <h2>Analytics & Redisclosure</h2>
+        <ul>
+          <li>ClassSeats does not run analytics on student data.</li>
+          <li>Student data is not used for advertising, profiling, or secondary purposes.</li>
+          <li>ClassSeats does not redisclose student information to third parties.</li>
+        </ul>
+
+        <h2>Account & District Context</h2>
+        <p>ClassSeats respects the security and governance controls of the account used:</p>
+        <ul>
+          <li>When an educator uses a personal Google account, data remains under that educator’s control.</li>
+          <li>
+            When an educator uses a district-managed Google Workspace account, district policies governing Drive usage, sharing, retention,
+            and device security apply.
+          </li>
+        </ul>
+        <p>ClassSeats does not alter or interfere with these controls.</p>
+
+        <h2>Summary for Schools & Districts</h2>
+        <ul>
+          <li>No ClassSeats student data servers</li>
+          <li>No student accounts</li>
+          <li>No analytics or profiling</li>
+          <li>Optional, file-level Google Drive access</li>
+          <li>Student data remains under educator control and within the account used</li>
+        </ul>
+
+        <p>
+          For district or IT questions, contact:
+          <a href="mailto:support@classseats.com">support@classseats.com</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand brand--footer">
+            <span class="brand-mark" aria-hidden="true">🪑</span>
+            <span class="brand-name">ClassSeats</span>
+          </div>
+          <p class="muted small">© <span id="y"></span> ClassSeats. All rights reserved.</p>
+          <p class="muted small">Google Drive is a trademark of Google LLC.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./">Home</a>
+          <a href="./district.html">District IT</a>
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./ferpa.html">FERPA</a>
+          <a href="./terms.html">Terms of Service</a>
+          <a href="./updates.html">Updates</a>
+          <a href="./#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
