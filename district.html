@@ -43,88 +43,110 @@
 
     <main class="section">
       <div class="container prose">
-        <h1>District & IT</h1>
+        <h1>District &amp; IT — ClassSeats™</h1>
         <p class="subhead">
-          ClassSeats is designed to be <strong>local-first</strong> and <strong>privacy-first</strong>:
-          no ClassSeats accounts required, no ClassSeats servers storing student data, and optional, user-controlled sync for cross-device use.
+          This page provides technical, deployment, and data-handling information about ClassSeats™, a classroom management application
+          provided by ClassWare Solutions, LLC, for school and district IT teams.
+        </p>
+        <p class="subhead">
+          ClassSeats is designed to be <strong>local-first</strong> and <strong>privacy-first</strong>: no ClassSeats accounts are required,
+          no ClassSeats servers store student data, and cross-device synchronization is optional and fully user-controlled.
         </p>
 
         <div class="callout" style="margin: 18px 0 22px">
           <div>
-            <h3 style="margin-top: 0">Quick summary (paste into an IT ticket)</h3>
+            <h3 style="margin-top: 0">Quick Summary (Paste into an IT Ticket)</h3>
             <ul class="bullets">
-              <li><strong>Purpose:</strong> Seating charts, attendance, and student groupings for educators.</li>
-              <li><strong>Data storage:</strong> local on the user’s device; optional sync to the user’s own Google Drive.</li>
-              <li><strong>No ClassSeats servers</strong> used to store student data.</li>
-              <li><strong>Google Drive scope (if enabled):</strong> <code>drive.file</code> (file-level access only).</li>
-              <li><strong>Authentication:</strong> Google OAuth (only when Drive sync is enabled).</li>
-              <li><strong>Offline:</strong> Core app works offline; sync requires internet.</li>
+              <li><strong>Purpose:</strong> Seating charts, attendance, and student groupings for educators</li>
+              <li><strong>Data storage:</strong> Local on the user’s device; optional sync to the user’s own Google Drive</li>
+              <li><strong>Student data servers:</strong> None (no ClassSeats-hosted student data servers)</li>
+              <li><strong>Google Drive scope (if enabled):</strong> <code>drive.file</code> (file-level access only)</li>
+              <li><strong>Authentication:</strong> Google OAuth (only when Drive sync is enabled)</li>
+              <li><strong>Offline use:</strong> Core app functions offline; sync requires internet</li>
             </ul>
           </div>
         </div>
 
-        <h2>1) Data model & file format</h2>
+        <h2>1) Data Model &amp; File Format</h2>
         <p>
-          ClassSeats stores classroom data in a single JSON file per class. The file is owned and controlled by the educator (or the district,
-          depending on Google Workspace configuration).
+          ClassSeats stores classroom data in a single JSON file per class. The file is owned and controlled by the educator or the
+          district, depending on the Google Workspace configuration in use.
         </p>
         <ul>
-          <li>Files are saved locally by default.</li>
-          <li>If sync is enabled, the class file is stored in the user’s Google Drive and synced across devices.</li>
-          <li>ClassSeats does not copy those files to any ClassSeats database.</li>
+          <li>Files are saved locally by default</li>
+          <li>If sync is enabled, the class file is stored in the user’s Google Drive and synced across devices</li>
+          <li>ClassSeats does not copy or mirror these files to any ClassSeats-controlled database</li>
         </ul>
 
-        <h2>2) Optional Google Drive access</h2>
+        <h2>2) Optional Google Drive Access</h2>
+        <p>Google Drive sync is optional and enabled only at the educator’s discretion.</p>
         <p>
-          Drive sync is optional. If enabled by the user, ClassSeats uses the Google Drive API with the <code>drive.file</code> scope.
-          This scope limits access to files created by ClassSeats or explicitly selected by the user via the file picker/open flow.
+          If enabled, ClassSeats uses the Google Drive API with the <code>drive.file</code> scope, which:
         </p>
         <ul>
-          <li>ClassSeats does not request broad Drive access (no “read all files” scope).</li>
-          <li>ClassSeats cannot browse or access unrelated Drive content.</li>
-          <li>Disconnecting Drive stops Drive access; the app continues using local storage.</li>
+          <li>Limits access to files created by ClassSeats or explicitly selected by the educator</li>
+          <li>Does not permit browsing or access to unrelated Drive content</li>
+          <li>Operates entirely within the permissions and policies of the Google account used</li>
+        </ul>
+        <p>Additional notes:</p>
+        <ul>
+          <li>ClassSeats does not request broad Drive access (no “read all files” scope)</li>
+          <li>Disconnecting Drive immediately stops Drive access</li>
+          <li>When Drive is disconnected or blocked, ClassSeats continues to operate using local storage</li>
         </ul>
 
-        <h2>3) Student privacy posture (FERPA-aligned workflows)</h2>
+        <h2>3) Student Privacy Posture (FERPA-Aligned Usage)</h2>
         <p>
-          ClassSeats is designed to support FERPA-aligned classroom workflows by keeping student data under existing teacher/district controls.
+          ClassSeats is designed to support FERPA-aligned instructional usage by keeping student data under existing educator and
+          district controls.
         </p>
         <ul>
-          <li>Data stays on the educator’s device and/or within the educator’s (or district-managed) Drive account.</li>
-          <li>No student data is transmitted to ClassSeats servers for storage.</li>
-          <li>District policies still apply (device security, account access, Drive sharing restrictions, retention, DLP, etc.).</li>
+          <li>Student data remains on the educator’s device and/or within the educator’s (or district-managed) Google Drive account</li>
+          <li>No student data is transmitted to ClassSeats servers for storage</li>
+          <li>District policies continue to apply, including:</li>
         </ul>
+        <p>Device security requirements</p>
+        <p>Account access controls</p>
+        <p>Drive sharing restrictions</p>
+        <p>Retention and Data Loss Prevention (DLP) policies</p>
+        <p>
+          For a detailed discussion of student data handling and FERPA alignment, see the FERPA &amp; Student Data Handling page.
+        </p>
 
-        <h2>4) Deployment notes</h2>
+        <h2>4) Deployment Notes</h2>
+        <p>ClassSeats can be used in multiple environments:</p>
         <ul>
-          <li><strong>Web/PWA:</strong> Can be used in a browser and installed as a PWA where supported.</li>
-          <li><strong>Mobile:</strong> A mobile-optimized interface is available for phones/tablets.</li>
-          <li><strong>Desktop:</strong> A desktop build may be available depending on rollout approach.</li>
-          <li><strong>Offline use:</strong> Core functionality works offline. Sync requires internet.</li>
+          <li><strong>Web / PWA:</strong> Runs in a modern browser and can be installed as a Progressive Web App where supported</li>
+          <li><strong>Mobile:</strong> Mobile-optimized interface available for phones and tablets</li>
+          <li><strong>Desktop:</strong> A desktop build may be available depending on rollout approach</li>
+          <li><strong>Offline use:</strong> Core functionality works offline; synchronization requires internet access</li>
         </ul>
 
-        <h2>5) Security & control questions (direct answers)</h2>
+        <h2>5) Security &amp; Control Questions (Direct Answers)</h2>
 
         <h3>Can we block Google Drive?</h3>
         <p>
-          Yes. If Drive access or OAuth consent is blocked in your environment, ClassSeats still works locally; users simply won’t be able
-          to use Drive sync.
+          Yes. If Google Drive access or OAuth consent is blocked, ClassSeats continues to work locally. Users simply will not be able to
+          use Drive sync.
         </p>
 
         <h3>Can we audit what gets stored?</h3>
         <p>
-          Yes. Data is stored as JSON files (local and/or Drive). Districts can apply normal controls for Drive file retention, sharing,
-          and DLP policies.
+          Yes. Data is stored as JSON files locally and/or in Google Drive. Districts may apply standard Drive controls for retention,
+          sharing, auditing, and Data Loss Prevention (DLP). ClassSeats does not encrypt or obfuscate files beyond standard Google Drive
+          protections.
         </p>
 
         <h3>Does ClassSeats run analytics on student data?</h3>
         <p>
-          No. ClassSeats is built to avoid ingesting student content into third-party analytics systems.
+          No. ClassSeats is built to avoid ingesting student content into third-party analytics systems and does not run analytics on
+          student data.
         </p>
 
         <h2>6) Support</h2>
+        <p>For district questions, pilot discussions, or rollout planning, contact:</p>
         <p>
-          For district questions, pilot discussions, or rollout planning:
+          <strong>ClassWare Solutions, LLC</strong>
           <br />
           Email: <a href="mailto:support@classseats.com">support@classseats.com</a>
         </p>
