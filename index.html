@@ -79,41 +79,9 @@
             </div>
           </div>
 
-          <div class="mock" aria-hidden="true">
-            <div class="mock-top">
-              <div class="mock-dot"></div>
-              <div class="mock-dot"></div>
-              <div class="mock-dot"></div>
-            </div>
-            <div class="mock-body">
-              <div class="mock-card">
-                <div class="mock-panel">
-                  <div class="mock-h">Seating</div>
-                  <div class="mock-grid">
-                    <span></span><span></span><span></span><span></span>
-                    <span></span><span></span><span></span><span></span>
-                    <span></span><span></span><span></span><span></span>
-                  </div>
-                </div>
-                <div class="mock-panel">
-                  <div class="mock-h">Names</div>
-                  <div class="mock-lines">
-                    <span></span><span></span><span></span>
-                  </div>
-                </div>
-                <div class="mock-panel">
-                  <div class="mock-h">Flashcards</div>
-                  <div class="mock-desks">
-                    <span></span><span></span><span></span><span></span><span></span><span></span>
-                  </div>
-                </div>
-                <div class="mock-panel">
-                  <div class="mock-h">Attendance</div>
-                  <div class="mock-lines">
-                    <span></span><span></span><span></span>
-                  </div>
-                </div>
-              </div>
+          <div class="hero-media-wrap">
+            <div class="mediaCard mediaCard--hero">
+              <img src="./media/hero-image.png" alt="" loading="eager" decoding="async" />
             </div>
           </div>
         </div>
@@ -203,56 +171,71 @@
           <h2>See it in action</h2>
           <p class="subhead">A quick look at the workflows teachers use every day.</p>
 
-          <div class="grid grid--2" style="margin-top: 14px">
-            <div class="card">
-              <h3>Regenerate balanced groups in seconds</h3>
-              <p class="muted small">Autoplay video (Generate Groups → instant regrouping)</p>
-              <video
-                src="./media/generate-groups.mp4"
-                autoplay
-                muted
-                loop
-                playsinline
-                preload="metadata"
-                style="width: 100%; border-radius: 12px; margin-top: 10px"
-              ></video>
-              <p style="margin-bottom: 0; margin-top: 10px">
-                When things change, your seating chart changes with you. Instantly.
-              </p>
-            </div>
+          <div class="chapters">
+            <article class="chapter">
+              <div class="chapter__text">
+                <h3>Regenerate balanced groups in seconds</h3>
+                <p class="muted small">Autoplay video (Generate Groups → instant regrouping)</p>
+                <p>
+                  When things change, your seating chart changes with you. Instantly.
+                </p>
+              </div>
+              <div class="chapter__media">
+                <div class="mediaCard">
+                  <video
+                    src="./media/generate-groups.mp4"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                  ></video>
+                </div>
+              </div>
+            </article>
 
-            <div class="card">
-              <h3>Learn every name, and hear it correctly</h3>
-              <p class="muted small">Flashcard composite (front + back)</p>
-              <img
-                src="./media/flashcards-composite.png"
-                alt="Flashcards showing student photo on one side and name + pronunciation audio on the other"
-                style="width: 100%; border-radius: 12px; margin-top: 10px"
-              />
-            </div>
+            <article class="chapter">
+              <div class="chapter__text">
+                <h3>Learn every name, and hear it correctly</h3>
+                <p class="muted small">Flashcard composite (front + back)</p>
+              </div>
+              <div class="chapter__media">
+                <div class="mediaCard">
+                  <img
+                    src="./media/flashcards-composite.png"
+                    alt="Flashcards showing student photo on one side and name + pronunciation audio on the other"
+                  />
+                </div>
+              </div>
+            </article>
 
-            <div class="card">
-              <h3>Clear enough to project. Clean enough to print.</h3>
-              <p class="muted small">Projection view screenshot</p>
-              <img
-                src="./media/projection-view.png"
-                alt="Full screen seating chart projection view"
-                style="width: 100%; border-radius: 12px; margin-top: 10px"
-              />
-            </div>
-
-            <div class="card">
-              <h3>Attendance that doesn’t require a clipboard</h3>
-              <p class="muted small">Attendance view screenshot</p>
-              <img
-                src="./media/attendance-view.png"
-                alt="Attendance view showing quick tap workflow"
-                style="width: 100%; border-radius: 12px; margin-top: 10px"
-              />
-              <p style="margin-bottom: 0; margin-top: 10px">
-                Take attendance in seconds . . . even with your phone.
-              </p>
-            </div>
+            <article class="chapter">
+              <div class="chapter__text">
+                <h3>Clear enough to project. Clean enough to print.</h3>
+                <p class="muted small">Projection view screenshot</p>
+                <h3>Attendance that doesn’t require a clipboard</h3>
+                <p class="muted small">Attendance view screenshot</p>
+                <p>
+                  Take attendance in seconds . . . even with your phone.
+                </p>
+              </div>
+              <div class="chapter__media">
+                <div class="mediaGrid mediaGrid--2">
+                  <div class="mediaCard">
+                    <img
+                      src="./media/projection-view.png"
+                      alt="Full screen seating chart projection view"
+                    />
+                  </div>
+                  <div class="mediaCard">
+                    <img
+                      src="./media/attendance-view.png"
+                      alt="Attendance view showing quick tap workflow"
+                    />
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
