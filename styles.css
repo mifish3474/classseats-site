@@ -614,7 +614,7 @@ h3{
     padding: 12px;
     border-radius: var(--r3);
     border: 1px solid var(--border);
-    background: rgba(255,255,255,.86);
+    background: #ffffff;
     box-shadow: var(--shadow);
   }
 
