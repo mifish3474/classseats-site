@@ -138,6 +138,9 @@ img, video{ max-width:100%; }
   color:#fff;
 }
 
+.navMenu{ display:none; }
+.nav--desktop{ display:flex; }
+
 /* ---------- Buttons ---------- */
 
 .button{
@@ -562,6 +565,56 @@ h3{
 
 /* ---------- Responsive ---------- */
 
+@media (max-width: 820px){
+  .nav--desktop{ display:none; }
+  .navMenu{ display:block; }
+
+  .header-inner{
+    align-items:center;
+    padding: 12px 0;
+  }
+
+  .navMenu__button{
+    list-style:none;
+    cursor:pointer;
+    user-select:none;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,.70);
+    font-weight: 800;
+    color: var(--text);
+  }
+  .navMenu__button::-webkit-details-marker{ display:none; }
+
+  .nav--menu{
+    margin-top: 10px;
+    display:grid;
+    gap: 10px;
+    padding: 12px;
+    border-radius: var(--r3);
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,.86);
+    box-shadow: var(--shadow);
+  }
+
+  .nav--menu a{
+    padding: 10px 10px;
+    border-radius: 12px;
+  }
+  .nav--menu a:hover{
+    background: rgba(11,18,32,.04);
+  }
+
+  .nav--menu .button{
+    width: 100%;
+    justify-content:center;
+  }
+}
+
 @media (max-width: 1024px){
   .hero-grid{
     grid-template-columns: 1fr;
@@ -611,7 +664,7 @@ h3{
   .container{
     width: min(var(--container), calc(100% - 30px));
   }
-  .hero{ padding: 64px 0 52px; }
+  .hero{ padding: 48px 0 44px; }
   .section{ padding: 52px 0; }
   .grid{ grid-template-columns: 1fr; }
   .nav{ gap: 10px; }
