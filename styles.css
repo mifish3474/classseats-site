@@ -106,6 +106,16 @@ img, video{ max-width:100%; }
   letter-spacing: -.02em;
 }
 
+.site-header .brand-mark{
+  width: 55px;
+  height: 55px;
+}
+
+.site-header .brand-name{
+  font-size: 40px;
+  line-height: 1;
+}
+
 .nav{
   display:flex;
   align-items:center;
@@ -119,7 +129,14 @@ img, video{ max-width:100%; }
   font-size: 14px;
   color: var(--muted);
 }
+.nav a.button:not(.button--ghost){
+  color: #fff;
+}
 .nav a:hover{ color: var(--text); }
+
+.nav a.button:not(.button--ghost):hover{
+  color:#fff;
+}
 
 /* ---------- Buttons ---------- */
 
