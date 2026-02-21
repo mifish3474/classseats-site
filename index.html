@@ -42,6 +42,7 @@
     </header>
 
     <main>
+      <!-- HERO -->
       <section class="hero">
         <div class="container hero-grid">
           <div>
@@ -81,58 +82,82 @@
 
           <div class="hero-media-wrap">
             <div class="mediaCard mediaCard--hero">
+              <div class="windowBar" aria-hidden="true">
+                <div class="windowDots">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
               <img src="./media/hero-image.png" alt="" loading="eager" decoding="async" />
             </div>
           </div>
         </div>
       </section>
 
+      <!-- STORY + TESTIMONIALS + FEATURES (recomposed into rhythm) -->
       <section id="features" class="section">
         <div class="container">
-          <h2>Built in a real classroom.</h2>
-          <p class="subhead">
-            Hi — I’m Marty, and I teach a 7th grade STEM class.
-          </p>
+          <div class="split">
+            <div>
+              <h2>Built in a real classroom.</h2>
+              <p class="subhead">
+                Hi — I’m Marty, and I teach a 7th grade STEM class.
+              </p>
 
-          <p class="subhead">
-            I tried all of the usual “teacher tricks” for seating charts: choose-your-own, random, clock partners. I was always disappointed.
-            Either students were frustrated, certain students needed to be separated, or I would spend hours rebuilding everything from scratch
-            every time I needed a new chart.
-          </p>
+              <p class="subhead">
+                I tried all of the usual “teacher tricks” for seating charts: choose-your-own, random, clock partners. I was always disappointed.
+                Either students were frustrated, certain students needed to be separated, or I would spend hours rebuilding everything from scratch
+                every time I needed a new chart.
+              </p>
 
-          <p class="subhead">
-            And seating wasn’t the only issue. Learning student names (and pronouncing them correctly) was tough. And taking attendance?
-            I was always losing my clipboard. All of it added to the daily mental load.
-          </p>
+              <p class="subhead">
+                And seating wasn’t the only issue. Learning student names (and pronouncing them correctly) was tough. And taking attendance?
+                I was always losing my clipboard. All of it added to the daily mental load.
+              </p>
 
-          <p class="subhead">
-            I wanted something that could handle real classroom dynamics, help me learn my students faster, and keep the everyday classroom tools in one place.
-            So I built ClassSeats.
-          </p>
+              <p class="subhead">
+                I wanted something that could handle real classroom dynamics, help me learn my students faster, and keep the everyday classroom tools in one place.
+                So I built ClassSeats.
+              </p>
 
-          <p class="subhead">
-            Now creating a new seating chart is as simple as pressing a button. Students who need to be separated are separated.
-            Students who need preferential seating get preferential seating. I can flip through flashcards to learn names, hear them pronounced correctly,
-            and take attendance from my phone.
-          </p>
+              <p class="subhead">
+                Now creating a new seating chart is as simple as pressing a button. Students who need to be separated are separated.
+                Students who need preferential seating get preferential seating. I can flip through flashcards to learn names, hear them pronounced correctly,
+                and take attendance from my phone.
+              </p>
 
-          <p class="subhead"><strong>More time. Better relationships. Ditch the clipboard.</strong></p>
-
-          <h2 style="margin-top: 36px">What teachers are saying</h2>
-
-          <div class="grid grid--2" style="margin-top: 14px">
-            <div class="card">
-              <p style="margin-top: 0"><strong>“It saves me about 20 minutes every time I rotate groups. I used to rebuild everything from scratch.”</strong></p>
-              <p class="muted small" style="margin-bottom: 0">— Rachel, 6th Grade</p>
+              <p class="subhead"><strong>More time. Better relationships. Ditch the clipboard.</strong></p>
             </div>
 
-            <div class="card">
-              <p style="margin-top: 0"><strong>“As a substitute, having student photos and a clear seating chart completely changes how confident I feel walking into a classroom.”</strong></p>
-              <p class="muted small" style="margin-bottom: 0">— Amanda, Substitute Teacher</p>
+            <div>
+              <h2>What teachers are saying</h2>
+
+              <div class="grid grid--2" style="margin-top: 14px">
+                <div class="card">
+                  <p style="margin-top: 0"><strong>“It saves me about 20 minutes every time I rotate groups. I used to rebuild everything from scratch.”</strong></p>
+                  <p class="muted small" style="margin-bottom: 0">— Rachel, 6th Grade</p>
+                </div>
+
+                <div class="card">
+                  <p style="margin-top: 0"><strong>“As a substitute, having student photos and a clear seating chart completely changes how confident I feel walking into a classroom.”</strong></p>
+                  <p class="muted small" style="margin-bottom: 0">— Amanda, Substitute Teacher</p>
+                </div>
+              </div>
+
+              <div class="callout" style="margin-top: 16px">
+                <div class="calloutInner">
+                  <div>
+                    <p style="margin:0"><strong>Less logistics. More teaching.</strong></p>
+                    <p class="muted small" style="margin:6px 0 0">Built for real classroom constraints — and real teacher concerns.</p>
+                  </div>
+                  <a class="button button--ghost" href="#how">See it in action</a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <h2 style="margin-top: 36px">What ClassSeats helps you do</h2>
+          <hr class="hr-soft" />
+
+          <h2>What ClassSeats helps you do</h2>
 
           <div class="grid" style="margin-top: 14px">
             <div class="card">
@@ -166,22 +191,32 @@
         </div>
       </section>
 
+      <!-- SEE IT IN ACTION (chaptered, not a dump) -->
       <section id="how" class="section section--alt">
         <div class="container">
-          <h2>See it in action</h2>
-          <p class="subhead">A quick look at the workflows teachers use every day.</p>
+          <div class="sectionTitleRow">
+            <div>
+              <h2>See it in action</h2>
+              <p class="subhead">A quick look at the workflows teachers use every day.</p>
+            </div>
+          </div>
 
           <div class="chapters">
+            <!-- Chapter 1 -->
             <article class="chapter">
-              <div class="chapter__text">
-                <h3>Regenerate balanced groups in seconds</h3>
-                <p class="muted small">Autoplay video (Generate Groups → instant regrouping)</p>
-                <p>
-                  When things change, your seating chart changes with you. Instantly.
-                </p>
-              </div>
-              <div class="chapter__media">
+              <div class="chapterGrid">
+                <div>
+                  <h3>Regenerate balanced groups in seconds</h3>
+                  <p class="muted small">Autoplay video (Generate Groups → instant regrouping)</p>
+                  <p class="muted" style="margin:0">
+                    When things change, your seating chart changes with you. Instantly.
+                  </p>
+                </div>
+
                 <div class="mediaCard">
+                  <div class="windowBar" aria-hidden="true">
+                    <div class="windowDots"><span></span><span></span><span></span></div>
+                  </div>
                   <video
                     src="./media/generate-groups.mp4"
                     autoplay
@@ -194,43 +229,61 @@
               </div>
             </article>
 
+            <!-- Chapter 2 -->
             <article class="chapter">
-              <div class="chapter__text">
-                <h3>Learn every name, and hear it correctly</h3>
-                <p class="muted small">Flashcard composite (front + back)</p>
-              </div>
-              <div class="chapter__media">
+              <div class="chapterGrid">
+                <div>
+                  <h3>Learn every name, and hear it correctly</h3>
+                  <p class="muted small">Flashcard composite (front + back)</p>
+                </div>
+
                 <div class="mediaCard">
+                  <div class="windowBar" aria-hidden="true">
+                    <div class="windowDots"><span></span><span></span><span></span></div>
+                  </div>
                   <img
                     src="./media/flashcards-composite.png"
                     alt="Flashcards showing student photo on one side and name + pronunciation audio on the other"
+                    decoding="async"
+                    loading="lazy"
                   />
                 </div>
               </div>
             </article>
 
+            <!-- Chapter 3 -->
             <article class="chapter">
-              <div class="chapter__text">
-                <h3>Clear enough to project. Clean enough to print.</h3>
-                <p class="muted small">Projection view screenshot</p>
-                <h3>Attendance that doesn’t require a clipboard</h3>
-                <p class="muted small">Attendance view screenshot</p>
-                <p>
-                  Take attendance in seconds . . . even with your phone.
-                </p>
-              </div>
-              <div class="chapter__media">
+              <div class="chapterGrid">
+                <div>
+                  <h3>Clear enough to project. Clean enough to print.</h3>
+                  <p class="muted small">Projection view + Attendance view</p>
+                  <p class="muted" style="margin:0">
+                    Take attendance in seconds . . . even with your phone.
+                  </p>
+                </div>
+
                 <div class="mediaGrid mediaGrid--2">
                   <div class="mediaCard">
+                    <div class="windowBar" aria-hidden="true">
+                      <div class="windowDots"><span></span><span></span><span></span></div>
+                    </div>
                     <img
                       src="./media/projection-view.png"
                       alt="Full screen seating chart projection view"
+                      decoding="async"
+                      loading="lazy"
                     />
                   </div>
+
                   <div class="mediaCard">
+                    <div class="windowBar" aria-hidden="true">
+                      <div class="windowDots"><span></span><span></span><span></span></div>
+                    </div>
                     <img
                       src="./media/attendance-view.png"
                       alt="Attendance view showing quick tap workflow"
+                      decoding="async"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -240,6 +293,7 @@
         </div>
       </section>
 
+      <!-- FAQ + CTA -->
       <section id="privacy" class="section">
         <div class="container">
           <h2>Frequently Asked Questions</h2>
@@ -275,18 +329,19 @@
           </div>
 
           <div class="callout" style="margin-top: 18px">
-            <div>
-              <h3>Ready to simplify your seating charts?</h3>
-              <p class="subhead">ClassSeats is free through the 2025–26 school year.</p>
-              <p style="margin-top: 10px">
-                <a class="button" href="https://app.classseats.app">Try ClassSeats Free</a>
-              </p>
-              <p class="muted small" style="margin-bottom: 0">No account required. Start immediately.</p>
+            <div class="calloutInner">
+              <div>
+                <h3 style="margin:0 0 6px">Ready to simplify your seating charts?</h3>
+                <p class="subhead" style="margin:0">ClassSeats is free through the 2025–26 school year.</p>
+                <p class="muted small" style="margin:8px 0 0">No account required. Start immediately.</p>
+              </div>
+              <a class="button" href="https://app.classseats.app">Try ClassSeats Free</a>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- CONTACT -->
       <section id="contact" class="section section--alt">
         <div class="container">
           <h2>Contact</h2>
@@ -297,7 +352,7 @@
 
           <div class="contact-card">
             <div>
-              <p class="muted">Email</p>
+              <p class="muted" style="margin:0">Email</p>
               <p class="contact-email"><a href="mailto:support@classseats.com">support@classseats.com</a></p>
             </div>
             <div class="contact-right">
