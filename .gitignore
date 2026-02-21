@@ -1,3 +1,0 @@
-# Ignore Windows alternate data stream artifacts copied into WSL/filesystems.
-*:Zone.Identifier
-*:zone.identifier
