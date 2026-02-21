@@ -73,7 +73,7 @@ img, video{ max-width:100%; }
   top: 0;
   z-index: 50;
   backdrop-filter: blur(10px);
-  background: rgba(246,247,251,.80);
+  background: rgba(247,244,255,.88);
   border-bottom: 1px solid var(--border);
 }
 
@@ -511,7 +511,7 @@ h3{
 .site-footer{
   border-top: 1px solid var(--border);
   padding: 24px 0;
-  background: rgba(255,255,255,.55);
+  background: rgba(247,244,255,.78);
 }
 
 .footer-inner{
@@ -540,6 +540,11 @@ h3{
 
 .prose{
   max-width: 860px;
+  background: rgba(255,255,255,.66);
+  border: 1px solid var(--border);
+  border-radius: var(--r3);
+  box-shadow: var(--shadow);
+  padding: clamp(20px, 3vw, 32px);
 }
 .prose h1{
   font-size: clamp(30px, 3.2vw, 44px);
