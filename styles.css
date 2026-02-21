@@ -319,6 +319,13 @@ h3{
   margin: 18px 0 14px;
 }
 
+.cta-note{
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.35;
+  color: var(--muted2);
+}
+
 /* ---------- Cards ---------- */
 
 .card{
