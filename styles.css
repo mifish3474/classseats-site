@@ -236,19 +236,11 @@ h3{
 
 .section{
   padding: var(--s8) 0;
-  background: linear-gradient(
-    180deg,
-    rgba(247,244,255,.42) 0%,
-    rgba(237,241,251,.42) 100%
-  );
+  background: transparent;
 }
 
 .section--alt{
-  background: linear-gradient(
-    180deg,
-    rgba(237,241,251,.42) 0%,
-    rgba(247,244,255,.42) 100%
-  );
+  background: transparent;
   border-top: none;
   border-bottom: none;
   box-shadow: none;
@@ -337,11 +329,7 @@ h3{
 .hero{
   padding: 78px 0 62px;
   position: relative;
-  background: linear-gradient(
-    180deg,
-    rgba(237,241,251,.42) 0%,
-    rgba(247,244,255,.42) 100%
-  );
+  background: transparent;
 }
 
 .hero::before{
