@@ -567,7 +567,10 @@ h3{
 
 @media (max-width: 820px){
   .nav--desktop{ display:none; }
-  .navMenu{ display:block; }
+  .navMenu{
+    display:block;
+    position: relative;
+  }
 
   .header-inner{
     align-items:center;
@@ -587,11 +590,25 @@ h3{
     background: rgba(255,255,255,.70);
     font-weight: 800;
     color: var(--text);
+    position: relative;
+    z-index: 3;
   }
   .navMenu__button::-webkit-details-marker{ display:none; }
 
   .nav--menu{
-    margin-top: 10px;
+    margin-top: 0;
+  }
+
+  .navMenu[open] .nav--menu{
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: min(78vw, 320px);
+    max-height: 70vh;
+    overflow: auto;
+    z-index: 2;
+    transform-origin: top right;
+    animation: menuPop .12s ease-out;
     display:grid;
     gap: 10px;
     padding: 12px;
@@ -599,6 +616,17 @@ h3{
     border: 1px solid var(--border);
     background: rgba(255,255,255,.86);
     box-shadow: var(--shadow);
+  }
+
+  @keyframes menuPop{
+    from{
+      transform: translateY(-4px) scale(.98);
+      opacity: .6;
+    }
+    to{
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
   }
 
   .nav--menu a{
