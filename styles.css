@@ -6,8 +6,8 @@
 
 :root{
   /* Canvas */
-  --bg: #f6f7fb;
-  --bg2: #eef1f7;
+  --bg: #f7f4ff;
+  --bg2: #edf1fb;
 
   /* Surfaces */
   --surface: #ffffff;
@@ -236,11 +236,19 @@ h3{
 
 .section{
   padding: var(--s8) 0;
-  background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(247,244,255,.42) 0%,
+    rgba(237,241,251,.42) 100%
+  );
 }
 
 .section--alt{
-  background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(237,241,251,.42) 0%,
+    rgba(247,244,255,.42) 100%
+  );
   border-top: none;
   border-bottom: none;
   box-shadow: none;
@@ -329,7 +337,11 @@ h3{
 .hero{
   padding: 78px 0 62px;
   position: relative;
-  background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(237,241,251,.42) 0%,
+    rgba(247,244,255,.42) 100%
+  );
 }
 
 .hero::before{
