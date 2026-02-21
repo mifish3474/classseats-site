@@ -453,9 +453,11 @@ h3{
 .action-item h3{
   margin-top: 12px;
   margin-bottom: 6px;
+  text-align: center;
 }
 .action-item p{
   margin: 0;
+  text-align: center;
 }
 
 /* ---------- Callout / CTA band ---------- */
