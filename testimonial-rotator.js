@@ -13,19 +13,61 @@
   let i = 0;
   let intervalId;
   let busy = false;
+  let resizeTimer;
 
-  function render(idx) {
+  function writeTestimonial(targetQuoteEl, targetAttribEl, idx) {
     const t = items[idx];
-    quoteEl.innerHTML = "";
+    targetQuoteEl.innerHTML = "";
 
     const paragraphs = t.quote.split(/\n\s*\n/);
     paragraphs.forEach((p) => {
       const el = document.createElement("p");
       el.textContent = p;
-      quoteEl.appendChild(el);
+      targetQuoteEl.appendChild(el);
     });
 
-    attribEl.textContent = `- ${t.name}, ${t.role}`;
+    targetAttribEl.textContent = `- ${t.name}, ${t.role}`;
+  }
+
+  function render(idx) {
+    writeTestimonial(quoteEl, attribEl, idx);
+  }
+
+  function lockCardHeight() {
+    const width = cardEl.getBoundingClientRect().width;
+    if (!width) return;
+
+    const measureCard = cardEl.cloneNode(true);
+    measureCard.removeAttribute("id");
+    measureCard.classList.remove("is-hidden");
+    measureCard.classList.add("is-visible");
+    measureCard.style.position = "fixed";
+    measureCard.style.left = "-9999px";
+    measureCard.style.top = "-9999px";
+    measureCard.style.width = `${width}px`;
+    measureCard.style.minHeight = "0";
+    measureCard.style.opacity = "1";
+    measureCard.style.transition = "none";
+    measureCard.style.pointerEvents = "none";
+
+    const measureQuoteEl = measureCard.querySelector(".t-quote-wrapper");
+    const measureAttribEl = measureCard.querySelector(".t-attrib");
+    if (!measureQuoteEl || !measureAttribEl) return;
+
+    document.body.appendChild(measureCard);
+
+    let maxHeight = 0;
+    for (let idx = 0; idx < items.length; idx += 1) {
+      writeTestimonial(measureQuoteEl, measureAttribEl, idx);
+      const nextHeight = measureCard.offsetHeight;
+      if (nextHeight > maxHeight) maxHeight = nextHeight;
+    }
+
+    measureCard.remove();
+
+    if (maxHeight > 0) {
+      cardEl.style.minHeight = `${maxHeight}px`;
+    }
   }
 
   function fadeSwap(nextIdx) {
@@ -79,6 +121,20 @@
   }
 
   render(i);
+  lockCardHeight();
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(lockCardHeight).catch(() => {});
+  }
+
+  function scheduleHeightLock() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(lockCardHeight, 150);
+  }
+
+  window.addEventListener("resize", scheduleHeightLock);
+  window.addEventListener("orientationchange", scheduleHeightLock);
+
   startRotation();
 
   // Pause on hover (desktop only behavior).
