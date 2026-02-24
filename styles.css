@@ -488,6 +488,58 @@ h3{
   flex-wrap:wrap;
 }
 
+/* ---------- Testimonials carousel ---------- */
+
+.t-heading{
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.t-carousel{
+  margin-top: 16px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.t-card{
+  max-width: 760px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r3);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: opacity 1.1s ease-in-out;
+}
+
+.t-card.is-visible{
+  opacity: 1;
+}
+
+.t-card.is-hidden{
+  opacity: 0;
+}
+
+.t-quote-wrapper p{
+  margin: 0 0 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.t-quote-wrapper p:last-child{
+  margin-bottom: 0;
+}
+
+.t-attrib{
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--muted);
+}
+
 /* ---------- Contact ---------- */
 
 .contact-card{

@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ClassSeats — Seating charts in seconds</title>
 
-    <link rel="stylesheet" href="./styles.css?v=20260221a" />
+    <link rel="stylesheet" href="./styles.css?v=20260224b" />
     <link rel="icon" href="./classseats-icon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -134,23 +134,11 @@
             </div>
 
             <div>
-              <h2>What teachers are saying</h2>
-
-              <div class="grid grid--2" style="margin-top: 14px; grid-template-columns: 1fr">
-                <div class="card">
-                  <p style="margin-top: 0">“I’m a 31-year teacher veteran, and I’ve always procrastinated seating charts because I hate the logic puzzle they create. These two need to sit together. These two can’t. Some need to be near the board. Others need to be close to my desk.</p>
-                  <p style="margin-top: 14px">ClassSeats has taken what used to be an hours-long job and made it simple. The easy attendance, discipline tracking, student notes, flashcards with photos, and pronunciation recordings are an added bonus. Even my subs love the printable seating charts with pictures.”</p>
-                  <p class="muted small" style="margin: 12px 0 0; font-weight: 800">— Lisa, 8th Grade Art</p>
-                </div>
-              </div>
-
-              <div class="callout" style="margin-top: 16px">
-                <div class="calloutInner">
-                  <div>
-                    <p style="margin:0"><strong>Less logistics. More teaching.</strong></p>
-                    <p class="muted small" style="margin:6px 0 0">Built for real classroom constraints — and real teacher concerns.</p>
-                  </div>
-                  <a class="button button--ghost" href="#how">See it in action</a>
+              <h2 class="t-heading">What teachers are saying</h2>
+              <div class="t-carousel">
+                <div class="t-card is-visible" id="tCard">
+                  <div class="t-quote-wrapper" id="tQuote"></div>
+                  <p class="t-attrib" id="tAttrib"></p>
                 </div>
               </div>
             </div>
@@ -375,6 +363,8 @@
         </div>
       </div>
     </footer>
+    <script src="./testimonials.js?v=20260224a"></script>
+    <script src="./testimonial-rotator.js?v=20260224d"></script>
     <script>
 document.addEventListener('click', function(e) {
   const menu = document.querySelector('.navMenu');
@@ -391,3 +381,5 @@ document.addEventListener('click', function(e) {
     </script>
   </body>
 </html>
+
+
