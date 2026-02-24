@@ -5,7 +5,8 @@
   const quoteEl = document.getElementById("tQuote");
   const attribEl = document.getElementById("tAttrib");
   const cardEl = document.getElementById("tCard");
-  if (!quoteEl || !attribEl || !cardEl) return;
+  const carouselEl = cardEl ? cardEl.closest(".t-carousel") : null;
+  if (!quoteEl || !attribEl || !cardEl || !carouselEl) return;
 
   const canAnimate = typeof cardEl.animate === "function";
   const FADE_MS = 900;
@@ -34,7 +35,7 @@
   }
 
   function lockCardHeight() {
-    const width = cardEl.getBoundingClientRect().width;
+    const width = carouselEl.getBoundingClientRect().width;
     if (!width) return;
 
     const measureCard = cardEl.cloneNode(true);
@@ -66,7 +67,8 @@
     measureCard.remove();
 
     if (maxHeight > 0) {
-      cardEl.style.minHeight = `${maxHeight}px`;
+      carouselEl.style.minHeight = `${maxHeight}px`;
+      cardEl.style.minHeight = "";
     }
   }
 

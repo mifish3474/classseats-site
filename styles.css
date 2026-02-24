@@ -755,4 +755,5 @@ h3{
   .section{ padding: 52px 0; }
   .grid{ grid-template-columns: 1fr; }
   .nav{ gap: 10px; }
+  .features-heading{ margin-top: 22px; }
 }
