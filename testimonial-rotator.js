@@ -11,7 +11,12 @@
   const canAnimate = typeof cardEl.animate === "function";
   const FADE_MS = 900;
 
-  let i = 0;
+  function getInitialIndex() {
+    if (items.length <= 1) return 0;
+    return Math.floor(Math.random() * items.length);
+  }
+
+  let i = getInitialIndex();
   let intervalId;
   let busy = false;
   let resizeTimer;
