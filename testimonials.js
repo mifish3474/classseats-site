@@ -16,5 +16,17 @@ window.CLASSSEATS_TESTIMONIALS = [
       "I've been loving it. Taking attendance is a breeze, and it's so easy to quickly add behavior data points.",
     name: "Bethany",
     role: "7th Grade Engineering"
+  },
+  {
+    quote:
+    "This app has been a real game changer for me!  It saves me so much time.  I can make new seating charts with the push of a key.  It is easy to edit and create different  variations.  I don't have to worry that I left a student off the chart or spelled their name wrong or put them next to somebody that they are not supposed to sit next to. I now have attendance, rosters and seating charts all in one place.  I love it!  So glad I found this app!",
+    name: "Sharon",
+    role: "7th Grade Science"
+  },
+  {
+    quote:
+    "Before ClassSeats, seating charts were the bane of my existence--the least favorite part of my job. I hated spending hours trying to figure out who to put where, erase and move people countless times, and think, change, think, change, only to do it all over again a few weeks later. Now, I have the flexibility to offer a change in seats more frequently, as well as to allow students to have more choice in their seating preferences.  I spent about 15 minutes creating my seating charts instead of the typical 1-2 hours accompanied by countless headaches. \n\nI also love how I can do record keeping (ie - attendance, ready to learn points, etc.) all in one place.",
+    name: "Dawn",
+    role: "7th Grade Language Arts"
   }
 ];
