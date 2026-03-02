@@ -62,8 +62,11 @@
           provided by ClassWare Solutions, LLC, for school and district IT teams.
         </p>
         <p class="subhead">
-          ClassSeats is designed to be <strong>local-first</strong> and <strong>privacy-first</strong>: no ClassSeats accounts are required,
+          ClassSeats is designed to be <strong>local-first</strong> and <strong>privacy-first</strong>: no student accounts are required,
           no ClassSeats servers store student data, and cross-device synchronization is optional and fully user-controlled.
+        </p>
+        <p class="subhead">
+          ClassSeats operates minimal backend infrastructure for anonymous usage telemetry and optional license management. This infrastructure does not store, transmit, or process student records, classroom files, seating charts, attendance data, or student names.
         </p>
 
         <div class="callout" style="margin: 18px 0 22px">
@@ -76,6 +79,7 @@
               <li><strong>Google Drive scope (if enabled):</strong> <code>drive.file</code> (file-level access only)</li>
               <li><strong>Authentication:</strong> Google OAuth (only when Drive sync is enabled)</li>
               <li><strong>Offline use:</strong> Core app functions offline; sync requires internet</li>
+              <li><strong>Backend infrastructure:</strong> Minimal telemetry and optional email-based license management; no student data storage</li>
             </ul>
           </div>
         </div>
@@ -88,7 +92,7 @@
         <ul>
           <li>Files are saved locally by default</li>
           <li>If sync is enabled, the class file is stored in the user’s Google Drive and synced across devices</li>
-          <li>ClassSeats does not copy or mirror these files to any ClassSeats-controlled database</li>
+          <li>ClassSeats does not copy, mirror, or transmit these files to any ClassSeats-controlled database or server.</li>
         </ul>
 
         <h2>2) Optional Google Drive Access</h2>
@@ -116,6 +120,7 @@
         <ul>
           <li>Student data remains on the educator’s device and/or within the educator’s (or district-managed) Google Drive account</li>
           <li>No student data is transmitted to ClassSeats servers for storage</li>
+          <li>No student data is processed by ClassSeats backend infrastructure</li>
           <li>District policies continue to apply, including:</li>
         </ul>
         <p>Device security requirements</p>
@@ -153,7 +158,7 @@
         <h3>Does ClassSeats run analytics on student data?</h3>
         <p>
           No. ClassSeats is built to avoid ingesting student content into third-party analytics systems and does not run analytics on
-          student data.
+          student data. ClassSeats may collect anonymous installation identifiers for reliability and active installation measurement, but these identifiers do not contain student data.
         </p>
 
         <h2>6) Support</h2>
