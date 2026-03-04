@@ -28,5 +28,11 @@ window.CLASSSEATS_TESTIMONIALS = [
     "Before ClassSeats, seating charts were the bane of my existence--the least favorite part of my job. I hated spending hours trying to figure out who to put where, erase and move people countless times, and think, change, think, change, only to do it all over again a few weeks later. Now, I have the flexibility to offer a change in seats more frequently, as well as to allow students to have more choice in their seating preferences.  I spent about 15 minutes creating my seating charts instead of the typical 1-2 hours accompanied by countless headaches. \n\nI also love how I can do record keeping (ie - attendance, ready to learn points, etc.) all in one place.",
     name: "Dawn",
     role: "7th Grade Language Arts"
+  },
+   {
+    quote:
+    "ClassSeats has been a time-saver when it comes to creating seating charts.  Rather than having to use a lot of "brain power" to come up with my own, ClassSeats allows me to use student voice to assist with placements, and does those placements at the click of a button!  Not only this, but the program has allowed me to elevate my ability to communicate with both students and parents about student behavior.  \n\nI can quickly track absences, behavior incidents, etc. and refer back as a running record, which has helped better inform conversations and elevate my ability to work with families.",
+    name: "Jillian",
+    role: "7th Grade Language Arts"
   }
 ];
