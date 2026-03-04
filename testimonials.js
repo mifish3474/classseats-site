@@ -31,7 +31,7 @@ window.CLASSSEATS_TESTIMONIALS = [
   },
    {
     quote:
-    "ClassSeats has been a time-saver when it comes to creating seating charts.  Rather than having to use a lot of "brain power" to come up with my own, ClassSeats allows me to use student voice to assist with placements, and does those placements at the click of a button!  Not only this, but the program has allowed me to elevate my ability to communicate with both students and parents about student behavior.  \n\nI can quickly track absences, behavior incidents, etc. and refer back as a running record, which has helped better inform conversations and elevate my ability to work with families.",
+    "ClassSeats has been a time-saver when it comes to creating seating charts.  Rather than having to use a lot of \"brain power\" to come up with my own, ClassSeats allows me to use student voice to assist with placements, and does those placements at the click of a button!  Not only this, but the program has allowed me to elevate my ability to communicate with both students and parents about student behavior.  \n\nI can quickly track absences, behavior incidents, etc. and refer back as a running record, which has helped better inform conversations and elevate my ability to work with families.",
     name: "Jillian",
     role: "7th Grade Language Arts"
   }
