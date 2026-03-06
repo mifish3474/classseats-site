@@ -34,5 +34,12 @@ window.CLASSSEATS_TESTIMONIALS = [
     "ClassSeats has been a time-saver when it comes to creating seating charts.  Rather than having to use a lot of \"brain power\" to come up with my own, ClassSeats allows me to use student voice to assist with placements, and does those placements at the click of a button!  Not only this, but the program has allowed me to elevate my ability to communicate with both students and parents about student behavior.  \n\nI can quickly track absences, behavior incidents, etc. and refer back as a running record, which has helped better inform conversations and elevate my ability to work with families.",
     name: "Jillian",
     role: "7th Grade Language Arts"
+  },
+  {
+    quote:
+    "One of the 'invisible' parts of teaching is making seating charts. As a teacher, we can all sympathize that sometimes it is a total headache. Using ClassSeats has become a massive time-saver and smart, intuitive solution. It is incredibly user-friendly and checks all the boxes of what every teacher needs to think of. \n\nI would recommend it to any educator looking to reclaim time!",
+    name: "Savannah",
+    role: "8th Grade Science"
   }
+
 ];
