@@ -40,6 +40,12 @@ window.CLASSSEATS_TESTIMONIALS = [
     "One of the 'invisible' parts of teaching is making seating charts. As a teacher, we can all sympathize that sometimes it is a total headache. Using ClassSeats has become a massive time-saver and smart, intuitive solution. It is incredibly user-friendly and checks all the boxes of what every teacher needs to think of. \n\nI would recommend it to any educator looking to reclaim time!",
     name: "Savannah",
     role: "8th Grade Science"
+  },
+  {
+    quote:
+    "Before I started using ClassSeats, the mental gymnastics involved in balancing behavior and educational needs when creating seating charts or groups could be pretty overwhelming.  Now, it's much easier to organize seating and groups in a way that feels thoughful while considering personalities, learning needs, and classroom dynamics.  The process is much quicker, and I don't feel like I'm constantly second-guessing my decisions.\n\nClassSeats saves me time whenever I need to rearrange seating or create new groups.  The students now get new seats more often, which they are happy about, and I no longer avoid one of my least favorite tasks as a teacher.",
+    name: "Rachel",
+    role: "7th Grade Science"
   }
 
 ];
