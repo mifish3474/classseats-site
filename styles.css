@@ -314,8 +314,8 @@ h3{
 
 .founder-portrait-card{
   width: min(100%, 248px);
-  float: right;
-  margin: 4px 0 18px 22px;
+  float: left;
+  margin: 4px 22px 18px 0;
   padding: 10px;
   background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(237,241,251,.74));
   border: 1px solid var(--border);
@@ -331,13 +331,6 @@ h3{
   border-radius: 14px;
   border: 1px solid rgba(11,18,32,.10);
   background: #f0f2f7;
-}
-
-.founder-portrait-card figcaption{
-  margin-top: 10px;
-  font-size: 13px;
-  line-height: 1.45;
-  color: var(--muted);
 }
 
 .cta-row{
