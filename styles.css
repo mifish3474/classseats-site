@@ -312,6 +312,34 @@ h3{
   align-items:start;
 }
 
+.founder-portrait-card{
+  width: min(100%, 248px);
+  float: right;
+  margin: 4px 0 18px 22px;
+  padding: 10px;
+  background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(237,241,251,.74));
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  box-shadow: var(--shadow);
+}
+
+.founder-portrait-card img{
+  width:100%;
+  display:block;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(11,18,32,.10);
+  background: #f0f2f7;
+}
+
+.founder-portrait-card figcaption{
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
 .cta-row{
   display:flex;
   flex-wrap:wrap;
@@ -756,4 +784,8 @@ h3{
   .grid{ grid-template-columns: 1fr; }
   .nav{ gap: 10px; }
   .features-heading{ margin-top: 22px; }
+  .founder-portrait-card{
+    float: none;
+    margin: 0 0 18px;
+  }
 }
