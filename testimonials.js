@@ -46,6 +46,12 @@ window.CLASSSEATS_TESTIMONIALS = [
     "Before I started using ClassSeats, the mental gymnastics involved in balancing behavior and educational needs when creating seating charts or groups could be pretty overwhelming.  Now, it's much easier to organize seating and groups in a way that feels thoughful while considering personalities, learning needs, and classroom dynamics.  The process is much quicker, and I don't feel like I'm constantly second-guessing my decisions.\n\nClassSeats saves me time whenever I need to rearrange seating or create new groups.  The students now get new seats more often, which they are happy about, and I no longer avoid one of my least favorite tasks as a teacher.",
     name: "Rachel",
     role: "7th Grade Science"
+  },
+  {
+    quote:
+    "What I especially love about the seating chart creation is that I can put in my requirements, such as having certain students sitting close together or apart, sitting in preferred seating that I designate, marked has having accommodations, etc. one time (always with the option to edit, as needed.) All seating plans then take these requirements into account.  Big time-saver!",
+    name: "Kristin",
+    role: "K-8, Specials"
   }
 
 ];
