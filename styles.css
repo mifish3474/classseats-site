@@ -474,6 +474,12 @@ h3{
   gap: 16px;
   margin-top: 18px;
 }
+
+.action-grid--single{
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+}
+
 .action-item{
   background: rgba(255,255,255,.66);
   border: 1px solid var(--border);
