@@ -269,6 +269,11 @@ h3{
   gap: 16px;
 }
 
+.sectionTitleRow--center{
+  justify-content: center;
+  text-align: center;
+}
+
 .hr-soft{
   height:1px;
   background: var(--border);
