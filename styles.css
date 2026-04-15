@@ -61,6 +61,19 @@ body{
 a{ color:inherit; }
 img, video{ max-width:100%; }
 
+.text-link{
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
 .container{
   width: min(var(--container), calc(100% - 56px));
   margin: 0 auto;

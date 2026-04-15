@@ -86,12 +86,19 @@
               notes, and flashcards during class.
             </p>
 
-            <p class="cta-note">
-              On your phone?
-              <a href="mailto:?subject=Try%20ClassSeats&body=Set%20this%20up%20on%20your%20computer%3A%0Ahttps%3A%2F%2Fapp.classseats.app">
-                Email yourself the setup link
-              </a>
-            </p>
+            <div class="cta-note">
+              <p style="margin: 0 0 6px">On your phone? Set up ClassSeats on a computer.</p>
+              <p style="margin: 0">
+                <button type="button" class="text-link" id="copySetupLink" data-copy-text="https://app.classseats.app">
+                  Copy setup link
+                </button>
+                or
+                <a href="mailto:?subject=Try%20ClassSeats&body=Set%20this%20up%20on%20your%20computer%3A%0Ahttps%3A%2F%2Fapp.classseats.app">
+                  email it to yourself
+                </a>
+              </p>
+              <p class="small" id="copySetupStatus" style="margin: 6px 0 0" aria-live="polite"></p>
+            </div>
           </div>
 
           <div class="hero-media-wrap">
@@ -259,6 +266,23 @@
 
         if (menu.open && !menu.contains(e.target)) {
           menu.removeAttribute('open');
+        }
+      });
+    </script>
+
+    <script>
+      document.addEventListener('click', async function (e) {
+        const button = e.target.closest('#copySetupLink');
+        if (!button) return;
+
+        const status = document.getElementById('copySetupStatus');
+        const link = button.getAttribute('data-copy-text');
+
+        try {
+          await navigator.clipboard.writeText(link);
+          if (status) status.textContent = 'Setup link copied.';
+        } catch (err) {
+          if (status) status.textContent = 'Copy failed. Use this link: ' + link;
         }
       });
     </script>
