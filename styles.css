@@ -365,6 +365,16 @@ h3{
   color: var(--muted2);
 }
 
+.phone-setup-card{
+  margin-top: 16px;
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(255,255,255,.94), rgba(237,241,251,.76));
+}
+
+.phone-setup-card .cta-row{
+  margin-top: 0;
+}
+
 /* ---------- Cards ---------- */
 
 .card{
