@@ -93,13 +93,14 @@
                 notes, and flashcards during class.
               </p>
               <div class="cta-row" style="margin: 0 0 10px">
-                <a
+                <button
+                  type="button"
                   class="button"
-                  id="emailSetupLink"
-                  href="mailto:?subject=Try%20ClassSeats&body=Set%20this%20up%20on%20your%20computer%3A%0Ahttps%3A%2F%2Fapp.classseats.app"
+                  id="sendSetupLink"
+                  data-email-href="mailto:?subject=Try%20ClassSeats&body=Set%20this%20up%20on%20your%20computer%3A%0Ahttps%3A%2F%2Fapp.classseats.app"
                 >
-                  Email Me The Setup Link
-                </a>
+                  Send Setup Link
+                </button>
                 <button type="button" class="button button--ghost" id="copySetupLink" data-copy-text="https://app.classseats.app">
                   Copy Desktop Link
                 </button>
@@ -284,6 +285,12 @@
     <script>
       (function () {
         const appUrl = 'https://app.classseats.app';
+        const shareData = {
+          title: 'ClassSeats setup link',
+          text: 'Set up ClassSeats on your computer: https://app.classseats.app',
+          url: appUrl
+        };
+
         function isPhoneVisitor() {
           const ua = navigator.userAgent || '';
           const uaDataMobile =
@@ -308,13 +315,36 @@
           void eventName;
         }
 
+        function fallbackToEmail(button) {
+          const mailtoHref = button && button.getAttribute('data-email-href');
+          if (mailtoHref) {
+            window.location.href = mailtoHref;
+          }
+        }
+
+        function sendSetupLink(button) {
+          if (navigator.share) {
+            navigator.share(shareData).then(function () {
+              trackLandingEvent('phone_send_link_clicked');
+            }).catch(function (err) {
+              if (err && err.name === 'AbortError') return;
+              fallbackToEmail(button);
+              trackLandingEvent('phone_email_link_clicked');
+            });
+            return;
+          }
+
+          fallbackToEmail(button);
+          trackLandingEvent('phone_email_link_clicked');
+        }
+
         document.addEventListener('DOMContentLoaded', function () {
           const isPhone = isPhoneVisitor();
           const appCtas = document.querySelectorAll('[data-app-cta]');
           const desktopSetupNote = document.getElementById('desktopSetupNote');
           const phoneSetupCard = document.getElementById('phoneSetupCard');
           const copyStatus = document.getElementById('copySetupStatus');
-          const emailSetupLink = document.getElementById('emailSetupLink');
+          const sendSetupLinkButton = document.getElementById('sendSetupLink');
           const phoneSignInLink = document.getElementById('phoneSignInLink');
 
           if (isPhone) {
@@ -330,8 +360,8 @@
             }
 
             appCtas.forEach(function (cta) {
-              cta.textContent = 'Email Me The Setup Link';
-              cta.setAttribute('href', emailSetupLink ? emailSetupLink.href : appUrl);
+              cta.textContent = 'Send Setup Link';
+              cta.setAttribute('href', appUrl);
             });
 
             trackLandingEvent('phone_setup_path_shown');
@@ -340,7 +370,15 @@
           document.addEventListener('click', function (e) {
             const appCta = e.target.closest('[data-app-cta]');
             if (appCta && isPhone) {
-              trackLandingEvent('phone_email_link_clicked');
+              e.preventDefault();
+              sendSetupLink(sendSetupLinkButton);
+              return;
+            }
+
+            const sendTrigger = e.target.closest('#sendSetupLink');
+            if (sendTrigger) {
+              e.preventDefault();
+              sendSetupLink(sendTrigger);
               return;
             }
 
@@ -364,12 +402,6 @@
               if (copyStatus) copyStatus.textContent = fallbackMessage;
             });
           });
-
-          if (emailSetupLink) {
-            emailSetupLink.addEventListener('click', function () {
-              trackLandingEvent('phone_email_link_clicked');
-            });
-          }
 
           if (phoneSignInLink) {
             phoneSignInLink.addEventListener('click', function () {
