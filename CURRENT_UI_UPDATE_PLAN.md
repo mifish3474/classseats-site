@@ -20,8 +20,160 @@ This is the working checklist for updating the public ClassSeats site so screens
 - What are the current names of the primary app views and actions?
 - Which features are included in the always-free tier?
 - Which features require the paid/full feature set?
-- Do we have fresh screenshots/videos, or should we capture new media from the current app?
 - Should the external Google Doc setup guide stay linked, be replaced, or be removed until refreshed?
+
+Known answer:
+- Fresh screenshots and videos are not available yet. New media needs to be captured from the current app UI before old UI media can be fully replaced.
+
+## Page-By-Page Media Decisions
+
+### Home Page
+
+File: `index.html`
+
+Media decision: Needs current UI media replacement.
+
+Current media:
+- `media/hero-image.png`
+- `media/generate-groups.mp4`
+- `media/flashcards-composite.png`
+- `media/projection-view.png`
+- `media/attendance-view.png`
+- `media/Marty.jpg`
+- `classseats-icon.png`
+
+Decision:
+- Replace `media/hero-image.png` with a current app hero screenshot.
+- Replace `media/generate-groups.mp4` with a current short workflow video, or remove the video card until a current clip exists.
+- Keep `media/flashcards-composite.png`.
+- Replace `media/projection-view.png` if projection/print remains a promoted workflow.
+- Replace `media/attendance-view.png` if attendance remains a promoted workflow.
+- Keep `media/Marty.jpg`.
+- Keep `classseats-icon.png`.
+
+Recommended capture set:
+- Hero screenshot: current main classroom/seating workspace.
+- Workflow video: current create/update seating or grouping workflow.
+- Flashcards screenshot or video.
+- Projection/print screenshot.
+- Attendance/mobile screenshot or video, if still accurate.
+
+### Get Started Page
+
+File: `get-started.html`
+
+Media decision: Needs current setup/onboarding media replacement.
+
+Current media and external references:
+- `media/generate-groups.mp4`
+- `media/ClassSeats-60Seconds.mp4`
+- `media/hero-image.png` for social sharing metadata.
+- External Google Doc setup guide.
+- `classseats-icon.png`
+
+Decision:
+- Replace `media/generate-groups.mp4` with current app UI media or remove that hero media card temporarily.
+- Replace `media/ClassSeats-60Seconds.mp4` with a current setup/onboarding clip.
+- Update social preview image once the new hero screenshot exists.
+- Treat the external setup guide as stale until confirmed updated.
+- Keep `classseats-icon.png`.
+
+Recommended capture set:
+- First-run/opening screen screenshot.
+- Current class creation or roster import clip.
+- Current first seating chart creation clip.
+- Optional mobile follow-up screenshot if phone use remains part of the setup promise.
+
+### Pricing Page
+
+File: `pricing.html`
+
+Media decision: No product UI media needed right now.
+
+Current media:
+- `classseats-icon.png` for nav/footer/social image.
+
+Decision:
+- Keep logo/icon media.
+- No screenshots or videos needed unless we later add a Free vs Pro visual comparison.
+
+### District IT Page
+
+File: `district.html`
+
+Media decision: No product UI media needed.
+
+Current media:
+- `classseats-icon.png` for nav/footer/social image.
+
+Decision:
+- Keep logo/icon media.
+- Focus this page on accurate technical and data-handling copy.
+
+### Privacy Policy
+
+File: `privacy.html`
+
+Media decision: No product UI media needed.
+
+Current media:
+- `classseats-icon.png` for nav/footer/social image.
+
+Decision:
+- Keep logo/icon media.
+- Only update copy if product behavior changed.
+
+### FERPA Page
+
+File: `ferpa.html`
+
+Media decision: No product UI media needed.
+
+Current media:
+- `classseats-icon.png` for nav/footer/social image.
+
+Decision:
+- Keep logo/icon media.
+- Only update copy if data-handling behavior changed.
+
+### Terms Of Service
+
+File: `terms.html`
+
+Media decision: No product UI media needed.
+
+Current media:
+- `classseats-icon.png` for nav/footer/social image.
+
+Decision:
+- Keep logo/icon media.
+- Only update copy if product behavior, account behavior, pricing, or trial terms changed.
+
+### Account Deletion Page
+
+File: `account-deletion.html`
+
+Media decision: No product UI media needed.
+
+Current media:
+- `classseats-icon.png` for nav/footer/social image.
+
+Decision:
+- Keep logo/icon media.
+- Only update copy if deletion/account/license/trial behavior changed.
+
+### Updates Page
+
+File: `updates.html`
+
+Media decision: No product UI media needed.
+
+Current media:
+- `classseats-icon.png` for nav/footer/social image.
+
+Decision:
+- Keep logo/icon media.
+- No screenshots or videos needed unless this becomes a changelog page with release images.
 
 ## Current Pages
 
@@ -211,4 +363,3 @@ Planned updates:
 - Verify image alt text and video labels.
 - Confirm JSON-LD FAQ matches visible FAQ.
 - Run `git diff --check`.
-
