@@ -440,24 +440,6 @@ h3{
   background: #f0f2f7; /* matte */
 }
 
-.mediaViewport{
-  width: 100%;
-  border-radius: var(--r2);
-  border: 1px solid rgba(11,18,32,.12);
-  background: #f0f2f7;
-  overflow: hidden;
-}
-
-.mediaViewport video{
-  border: 0;
-  border-radius: 0;
-}
-
-.mediaViewport--cropSides video{
-  transform: scale(1.22);
-  transform-origin: center center;
-}
-
 .mediaCard--hero{
   width: min(100%, 520px);
   margin-top: 6px;
