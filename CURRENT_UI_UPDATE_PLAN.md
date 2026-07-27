@@ -181,11 +181,11 @@ Decision:
 
 File: `index.html`
 
-Status: Not started
+Status: Media updated; final copy/QA pass pending
 
 Current concerns:
-- Hero screenshot uses old UI: `media/hero-image.png`.
-- "See it in action" section uses old media:
+- Hero screenshot has been replaced with current UI: `media/hero-image.png`.
+- "See it in action" media has been reviewed:
   - `media/generate-groups.mp4`
   - `media/flashcards-composite.png`
   - `media/projection-view.png`
