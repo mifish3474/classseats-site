@@ -942,6 +942,9 @@ h3{
     margin-left: 0;
     margin-right: 0;
   }
+  .mobile-app-shell .lead{
+    text-align:center;
+  }
   .mobile-app-alert{
     padding: 16px;
   }
