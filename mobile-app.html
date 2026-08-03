@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ClassSeats Companion is now available for iPhone and Android. Replace the old mobile web shortcut with the native app."
+    />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>ClassSeats Mobile App</title>
+    <link rel="canonical" href="https://www.classseats.com/mobile-app" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ClassSeats Mobile App" />
+    <meta
+      property="og:description"
+      content="ClassSeats Companion is now available for iPhone and Android. Replace the old mobile web shortcut with the native app."
+    />
+    <meta property="og:url" content="https://www.classseats.com/mobile-app" />
+    <meta property="og:site_name" content="ClassSeats" />
+    <meta property="og:image" content="https://www.classseats.com/classseats-icon.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ClassSeats Mobile App" />
+    <meta
+      name="twitter:description"
+      content="ClassSeats Companion is now available for iPhone and Android. Replace the old mobile web shortcut with the native app."
+    />
+    <meta name="twitter:image" content="https://www.classseats.com/classseats-icon.png" />
+
+    <link rel="stylesheet" href="./styles.css?v=20260224b" />
+    <link rel="icon" href="./classseats-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="mobile-app-page">
+    <header class="site-header mobile-app-header">
+      <div class="container header-inner">
+        <a class="brand" href="./">
+          <span class="brand-mark" aria-hidden="true"><img src="./classseats-icon.png" alt="" /></span>
+          <span class="brand-name">ClassSeats</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="mobile-app-hero">
+        <div class="container mobile-app-shell">
+          <div class="mobile-app-icon" aria-hidden="true">
+            <img src="./classseats-icon.png" alt="" />
+          </div>
+
+          <p class="eyebrow">ClassSeats for mobile</p>
+          <h1>Use the new ClassSeats app.</h1>
+
+          <p class="lead">
+            The old mobile web shortcut is being replaced by ClassSeats Companion for iPhone and Android.
+          </p>
+
+          <div class="mobile-app-alert">
+            <h2>Delete the old Home Screen bookmark</h2>
+            <p>
+              If you previously added <strong>mobile.classseats.app</strong> to your phone's Home Screen, press and hold that icon and remove it.
+              Then install the native app below.
+            </p>
+          </div>
+
+          <div class="store-choice" aria-label="Choose your app store">
+            <a
+              class="store-card"
+              href="https://apps.apple.com/us/app/classseats-companion/id6788792582"
+              data-store-link="ios"
+            >
+              <span class="store-card__kicker">iPhone and iPad</span>
+              <span class="store-card__title">Download on the App Store</span>
+            </a>
+
+            <a
+              class="store-card"
+              href="https://play.google.com/store/apps/details?id=com.classwaresolutions.classseatscompanion&amp;hl=en_US"
+              data-store-link="android"
+            >
+              <span class="store-card__kicker">Android phones and tablets</span>
+              <span class="store-card__title">Get it on Google Play</span>
+            </a>
+          </div>
+
+          <p class="mobile-app-note">
+            Already using ClassSeats on a desktop or laptop? Keep using
+            <a href="https://app.classseats.app">app.classseats.app</a> there.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer mobile-app-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand brand--footer">
+            <span class="brand-mark" aria-hidden="true"><img src="./classseats-icon.png" alt="" /></span>
+            <span class="brand-name">ClassSeats™</span>
+          </div>
+          <p class="muted small">© <span id="y"></span> ClassWare Solutions, LLC. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        function getMobilePlatform() {
+          const ua = navigator.userAgent || '';
+          const isAndroid = /Android/i.test(ua);
+          const isIOS =
+            /iPhone|iPad|iPod/i.test(ua) ||
+            (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+          if (isIOS) return 'ios';
+          if (isAndroid) return 'android';
+          return '';
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+          const platform = getMobilePlatform();
+          if (!platform) return;
+
+          const preferredLink = document.querySelector('[data-store-link="' + platform + '"]');
+          if (!preferredLink) return;
+
+          preferredLink.classList.add('store-card--preferred');
+          preferredLink.parentElement.insertBefore(preferredLink, preferredLink.parentElement.firstElementChild);
+        });
+      })();
+    </script>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

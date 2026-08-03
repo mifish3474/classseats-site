@@ -677,6 +677,156 @@ h3{
 .prose a{ color: var(--text); }
 .prose .toplink{ margin-top: 24px; }
 
+/* ---------- Mobile app transition page ---------- */
+
+.mobile-app-page{
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(109,40,217,.14), transparent 34%),
+    linear-gradient(180deg, var(--bg), var(--bg2));
+}
+
+.mobile-app-header .header-inner{
+  justify-content: center;
+}
+
+.mobile-app-hero{
+  min-height: calc(100vh - 167px);
+  display:flex;
+  align-items:center;
+  padding: clamp(34px, 8vh, 72px) 0;
+}
+
+.mobile-app-shell{
+  max-width: 720px;
+  text-align:center;
+}
+
+.mobile-app-icon{
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 26px;
+  background: rgba(255,255,255,.74);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow2);
+}
+
+.mobile-app-icon img{
+  width: 62px;
+  height: 62px;
+  display:block;
+}
+
+.mobile-app-shell .eyebrow{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-app-shell h1{
+  max-width: 620px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.mobile-app-shell .lead{
+  max-width: 600px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.mobile-app-alert{
+  margin: 24px auto 18px;
+  padding: 18px;
+  max-width: 620px;
+  text-align:left;
+  background: rgba(255,255,255,.82);
+  border: 1px solid var(--border);
+  border-radius: var(--r3);
+  box-shadow: var(--shadow);
+}
+
+.mobile-app-alert h2{
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.mobile-app-alert p{
+  margin:0;
+  color: var(--muted);
+  line-height: 1.68;
+}
+
+.store-choice{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px auto 0;
+  max-width: 620px;
+}
+
+.store-card{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  min-height: 116px;
+  padding: 18px;
+  text-align:left;
+  text-decoration:none;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r3);
+  box-shadow: var(--shadow);
+  transition: transform .14s ease, box-shadow .14s ease, border-color .14s ease;
+}
+
+.store-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(109,40,217,.30);
+  box-shadow: var(--shadow2);
+}
+
+.store-card--preferred{
+  border-color: rgba(109,40,217,.36);
+  box-shadow: 0 16px 42px rgba(109,40,217,.14);
+}
+
+.store-card__kicker{
+  color: var(--muted2);
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.store-card__title{
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -.01em;
+}
+
+.mobile-app-note{
+  margin: 18px auto 0;
+  max-width: 560px;
+  color: var(--muted2);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.mobile-app-note a{
+  color: var(--text);
+  font-weight: 800;
+}
+
+.mobile-app-footer .footer-inner{
+  justify-content:center;
+  text-align:center;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 820px){
@@ -814,5 +964,53 @@ h3{
   .founder-portrait-card{
     float: none;
     margin: 0 0 18px;
+  }
+  .mobile-app-header .site-header .brand-mark,
+  .mobile-app-header .brand-mark{
+    width: 42px;
+    height: 42px;
+  }
+  .mobile-app-header .site-header .brand-name,
+  .mobile-app-header .brand-name{
+    font-size: 30px;
+  }
+  .mobile-app-hero{
+    align-items:flex-start;
+    min-height: auto;
+    padding: 34px 0 42px;
+  }
+  .mobile-app-icon{
+    width: 76px;
+    height: 76px;
+    border-radius: 22px;
+  }
+  .mobile-app-icon img{
+    width: 54px;
+    height: 54px;
+  }
+  .mobile-app-shell{
+    text-align:left;
+  }
+  .mobile-app-shell .eyebrow,
+  .mobile-app-shell h1,
+  .mobile-app-shell .lead{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .mobile-app-icon{
+    margin-left: 0;
+  }
+  .mobile-app-alert{
+    padding: 16px;
+  }
+  .store-choice{
+    grid-template-columns: 1fr;
+  }
+  .store-card{
+    min-height: 98px;
+  }
+  .mobile-app-footer .footer-inner{
+    justify-content:flex-start;
+    text-align:left;
   }
 }
