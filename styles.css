@@ -147,6 +147,11 @@ img, video{ max-width:100%; }
 }
 .nav a:hover{ color: var(--text); }
 
+.nav a.nav-active,
+.nav a[aria-current="page"]{
+  color: var(--text);
+}
+
 .nav a.button:not(.button--ghost):hover{
   color:#fff;
 }
@@ -686,10 +691,6 @@ h3{
     linear-gradient(180deg, var(--bg), var(--bg2));
 }
 
-.mobile-app-header .header-inner{
-  justify-content: center;
-}
-
 .mobile-app-hero{
   min-height: calc(100vh - 167px);
   display:flex;
@@ -779,11 +780,6 @@ h3{
 .mobile-app-note a{
   color: var(--text);
   font-weight: 800;
-}
-
-.mobile-app-footer .footer-inner{
-  justify-content:center;
-  text-align:center;
 }
 
 /* ---------- Responsive ---------- */
@@ -954,9 +950,5 @@ h3{
   }
   .store-badge{
     height: 52px;
-  }
-  .mobile-app-footer .footer-inner{
-    justify-content:flex-start;
-    text-align:left;
   }
 }

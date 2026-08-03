@@ -7,7 +7,7 @@
       name="description"
       content="ClassSeats Companion is now available as an official app. Choose your app store to install."
     />
-    <meta name="robots" content="noindex,nofollow" />
+    <meta name="robots" content="index,follow" />
     <title>ClassSeats Mobile App</title>
     <link rel="canonical" href="https://www.classseats.com/mobile-app" />
 
@@ -47,6 +47,33 @@
           <span class="brand-mark" aria-hidden="true"><img src="./classseats-icon.png" alt="" /></span>
           <span class="brand-name">ClassSeats</span>
         </a>
+
+        <nav class="nav nav--desktop">
+          <a href="./privacy.html">Privacy</a>
+          <a href="./ferpa.html">FERPA</a>
+          <a href="./terms.html">Terms</a>
+          <a href="./district.html">District IT</a>
+          <a href="./pricing.html">Pricing</a>
+          <a class="nav-active" href="./mobile-app.html" aria-current="page">Mobile App</a>
+          <a href="./updates.html">Updates</a>
+          <a class="button button--ghost" href="./#contact">Contact</a>
+          <a class="button" href="https://app.classseats.app">Try ClassSeats Free</a>
+        </nav>
+
+        <details class="navMenu">
+          <summary class="navMenu__button">Menu</summary>
+          <nav class="nav nav--menu">
+            <a href="./privacy.html">Privacy</a>
+            <a href="./ferpa.html">FERPA</a>
+            <a href="./terms.html">Terms</a>
+            <a href="./district.html">District IT</a>
+            <a href="./pricing.html">Pricing</a>
+            <a class="nav-active" href="./mobile-app.html" aria-current="page">Mobile App</a>
+            <a href="./updates.html">Updates</a>
+            <a class="button button--ghost" href="./#contact">Contact</a>
+            <a class="button" href="https://app.classseats.app">Try ClassSeats Free</a>
+          </nav>
+        </details>
       </div>
     </header>
 
@@ -110,9 +137,34 @@
             <span class="brand-name">ClassSeats™</span>
           </div>
           <p class="muted small">© <span id="y"></span> ClassWare Solutions, LLC. All rights reserved.</p>
+          <p class="muted small">ClassSeats is a trademark of ClassWare Solutions, LLC.</p>
+          <p class="muted small">Google Drive is a trademark of Google LLC.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./">Home</a>
+          <a href="./district.html">District IT</a>
+          <a href="./pricing.html">Pricing</a>
+          <a href="./mobile-app.html">Mobile App</a>
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./account-deletion.html">Account Deletion</a>
+          <a href="./ferpa.html">FERPA</a>
+          <a href="./terms.html">Terms of Service</a>
+          <a href="./updates.html">Updates</a>
+          <a href="./#contact">Contact</a>
         </div>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener('click', function (e) {
+        const menu = document.querySelector('.navMenu');
+        if (!menu) return;
+
+        if (menu.open && !menu.contains(e.target)) {
+          menu.removeAttribute('open');
+        }
+      });
+    </script>
 
     <script>
       (function () {
