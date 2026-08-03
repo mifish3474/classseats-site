@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="ClassSeats Companion is now available for iPhone and Android. Replace the old mobile web shortcut with the native app."
+      content="Access ClassSeats on your mobile device with the official ClassSeats Companion app for iPhone and Android."
     />
     <meta name="robots" content="noindex,nofollow" />
     <title>ClassSeats Mobile App</title>
@@ -15,7 +15,7 @@
     <meta property="og:title" content="ClassSeats Mobile App" />
     <meta
       property="og:description"
-      content="ClassSeats Companion is now available for iPhone and Android. Replace the old mobile web shortcut with the native app."
+      content="Access ClassSeats on your mobile device with the official ClassSeats Companion app for iPhone and Android."
     />
     <meta property="og:url" content="https://www.classseats.com/mobile-app" />
     <meta property="og:site_name" content="ClassSeats" />
@@ -25,7 +25,7 @@
     <meta name="twitter:title" content="ClassSeats Mobile App" />
     <meta
       name="twitter:description"
-      content="ClassSeats Companion is now available for iPhone and Android. Replace the old mobile web shortcut with the native app."
+      content="Access ClassSeats on your mobile device with the official ClassSeats Companion app for iPhone and Android."
     />
     <meta name="twitter:image" content="https://www.classseats.com/classseats-icon.png" />
 
@@ -53,43 +53,43 @@
     <main>
       <section class="mobile-app-hero">
         <div class="container mobile-app-shell">
-          <div class="mobile-app-icon" aria-hidden="true">
-            <img src="./classseats-icon.png" alt="" />
-          </div>
-
-          <p class="eyebrow">ClassSeats for mobile</p>
-          <h1>Use the new ClassSeats app.</h1>
+          <h1>ClassSeats Companion</h1>
 
           <p class="lead">
-            The old mobile web shortcut is being replaced by ClassSeats Companion for iPhone and Android.
+            Access ClassSeats on your mobile device with the official Companion App!
           </p>
+
+          <div class="store-choice" aria-label="Choose your app store">
+            <a
+              class="store-badge-link"
+              href="https://apps.apple.com/us/app/classseats-companion/id6788792582"
+              data-store-link="ios"
+            >
+              <img
+                class="store-badge store-badge--apple"
+                src="./media/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                alt="Download on the App Store"
+              />
+            </a>
+
+            <a
+              class="store-badge-link"
+              href="https://play.google.com/store/apps/details?id=com.classwaresolutions.classseatscompanion&amp;hl=en_US"
+              data-store-link="android"
+            >
+              <img
+                class="store-badge store-badge--google"
+                src="./media/GetItOnGooglePlay_Badge_Web_color_English.svg"
+                alt="Get it on Google Play"
+              />
+            </a>
+          </div>
 
           <div class="mobile-app-alert">
             <h2>Delete the old Home Screen bookmark</h2>
             <p>
-              If you previously added <strong>mobile.classseats.app</strong> to your phone's Home Screen, press and hold that icon and remove it.
-              Then install the native app below.
+              If you bookmarked <strong>mobile.classseats.app</strong> on your Home Screen, press and hold that icon and remove it.
             </p>
-          </div>
-
-          <div class="store-choice" aria-label="Choose your app store">
-            <a
-              class="store-card"
-              href="https://apps.apple.com/us/app/classseats-companion/id6788792582"
-              data-store-link="ios"
-            >
-              <span class="store-card__kicker">iPhone and iPad</span>
-              <span class="store-card__title">Download on the App Store</span>
-            </a>
-
-            <a
-              class="store-card"
-              href="https://play.google.com/store/apps/details?id=com.classwaresolutions.classseatscompanion&amp;hl=en_US"
-              data-store-link="android"
-            >
-              <span class="store-card__kicker">Android phones and tablets</span>
-              <span class="store-card__title">Get it on Google Play</span>
-            </a>
           </div>
 
           <p class="mobile-app-note">
@@ -133,7 +133,6 @@
           const preferredLink = document.querySelector('[data-store-link="' + platform + '"]');
           if (!preferredLink) return;
 
-          preferredLink.classList.add('store-card--preferred');
           preferredLink.parentElement.insertBefore(preferredLink, preferredLink.parentElement.firstElementChild);
         });
       })();
