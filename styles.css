@@ -949,7 +949,7 @@ h3{
     padding: 16px;
   }
   .store-choice{
-    justify-content:flex-start;
+    justify-content:center;
   }
   .store-badge{
     height: 52px;
