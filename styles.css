@@ -726,6 +726,12 @@ h3{
   box-shadow: var(--shadow);
 }
 
+.mobile-app-companion-note{
+  max-width: 720px;
+  margin: 8px auto 22px;
+  text-align:center;
+}
+
 .mobile-app-alert h2{
   font-size: 22px;
   margin-bottom: 8px;
@@ -735,6 +741,28 @@ h3{
   margin:0;
   color: var(--muted);
   line-height: 1.68;
+}
+
+.mobile-app-companion-note h2{
+  font-size: clamp(19px, 1.8vw, 24px);
+  line-height: 1.24;
+  letter-spacing: -.015em;
+  margin-bottom: 10px;
+}
+
+.mobile-app-companion-note p{
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+.mobile-app-shell .mobile-app-install-copy{
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 .store-choice{
@@ -935,18 +963,25 @@ h3{
     padding: 34px 0 42px;
   }
   .mobile-app-shell{
-    text-align:left;
+    text-align:center;
   }
   .mobile-app-shell h1,
   .mobile-app-shell .lead{
     margin-left: 0;
     margin-right: 0;
   }
-  .mobile-app-shell .lead{
-    text-align:center;
-  }
   .mobile-app-alert{
     padding: 16px;
+  }
+  .mobile-app-companion-note{
+    margin-top: 6px;
+    margin-bottom: 20px;
+  }
+  .mobile-app-companion-note h2{
+    font-size: 18px;
+  }
+  .mobile-app-companion-note p{
+    font-size: 15px;
   }
   .store-choice{
     justify-content:center;
