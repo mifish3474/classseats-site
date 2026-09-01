@@ -717,6 +717,11 @@ h3{
   line-height: 1.55;
 }
 
+.pricing-matrix td{
+  text-align: center;
+  width: 31%;
+}
+
 .pricing-matrix thead th{
   color: var(--text);
   font-size: 13px;
@@ -728,6 +733,30 @@ h3{
   width: 38%;
   color: var(--text);
   font-weight: 900;
+}
+
+.matrix-mark{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.matrix-mark--yes{
+  color: #166534;
+  background: #dcfce7;
+  border: 1px solid rgba(22,101,52,.16);
+}
+
+.matrix-mark--no{
+  color: #991b1b;
+  background: #fee2e2;
+  border: 1px solid rgba(153,27,27,.14);
 }
 
 .pricing-matrix tbody tr:last-child th,
