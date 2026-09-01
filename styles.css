@@ -682,6 +682,59 @@ h3{
 .prose a{ color: var(--text); }
 .prose .toplink{ margin-top: 24px; }
 
+/* ---------- Pricing ---------- */
+
+.pricing-matrix-wrap{
+  margin: 28px 0 8px;
+}
+
+.pricing-matrix-wrap h2{
+  margin-top: 0;
+}
+
+.pricing-matrix-scroll{
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  background: rgba(255,255,255,.82);
+  box-shadow: var(--shadow);
+}
+
+.pricing-matrix{
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+}
+
+.pricing-matrix th,
+.pricing-matrix td{
+  padding: 15px 16px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.pricing-matrix thead th{
+  color: var(--text);
+  font-size: 13px;
+  letter-spacing: 0;
+  background: rgba(237,241,251,.72);
+}
+
+.pricing-matrix tbody th{
+  width: 24%;
+  color: var(--text);
+  font-weight: 900;
+}
+
+.pricing-matrix tbody tr:last-child th,
+.pricing-matrix tbody tr:last-child td{
+  border-bottom: 0;
+}
+
 /* ---------- Mobile app transition page ---------- */
 
 .mobile-app-page{
