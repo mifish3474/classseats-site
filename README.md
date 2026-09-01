@@ -15,4 +15,6 @@ Then open:
 
 Stop the server with `Ctrl+C`.
 
+The preview server is a small Node script, so it does not require Python to be installed.
+
 

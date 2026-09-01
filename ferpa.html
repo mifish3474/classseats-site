@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./styles.css?v=20260221a" />
+    <link rel="stylesheet" href="./styles.css?v=20260901a" />
     <link rel="icon" href="./classseats-icon.png" />
   </head>
 
@@ -46,25 +46,25 @@
         </a>
         <nav class="nav nav--desktop">
           <a href="./privacy.html">Privacy</a>
-          <a class="nav-active" href="./ferpa.html">FERPA</a>
+          <a class="nav-active" href="./ferpa.html" aria-current="page">FERPA</a>
           <a href="./terms.html">Terms</a>
           <a href="./district.html">District IT</a>
           <a href="./pricing.html">Pricing</a>
           <a href="./updates.html">Updates</a>
           <a class="button button--ghost" href="./#contact">Contact</a>
-          <a class="button" href="https://app.classseats.app">Try ClassSeats - Free for the 25/26 School Year</a>
+          <a class="button" href="https://app.classseats.app">Start Free 45-Day Pro Trial</a>
         </nav>
         <details class="navMenu">
           <summary class="navMenu__button">Menu</summary>
           <nav class="nav nav--menu">
             <a href="./privacy.html">Privacy</a>
-            <a class="nav-active" href="./ferpa.html">FERPA</a>
+            <a class="nav-active" href="./ferpa.html" aria-current="page">FERPA</a>
             <a href="./terms.html">Terms</a>
             <a href="./district.html">District IT</a>
             <a href="./pricing.html">Pricing</a>
             <a href="./updates.html">Updates</a>
             <a class="button button--ghost" href="./#contact">Contact</a>
-            <a class="button" href="https://app.classseats.app">Try ClassSeats - Free for the 25/26 School Year</a>
+            <a class="button" href="https://app.classseats.app">Start Free 45-Day Pro Trial</a>
           </nav>
         </details>
       </div>
@@ -207,19 +207,6 @@
         </div>
       </div>
     </footer>
-    <script>
-document.addEventListener('click', function(e) {
-  const menu = document.querySelector('.navMenu');
-  if (!menu) return;
-
-  if (menu.open && !menu.contains(e.target)) {
-    menu.removeAttribute('open');
-  }
-});
-    </script>
-
-    <script>
-      document.getElementById('y').textContent = new Date().getFullYear();
-    </script>
+    <script src="./site.js?v=20260901a"></script>
   </body>
 </html>
