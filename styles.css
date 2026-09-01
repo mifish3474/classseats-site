@@ -703,7 +703,7 @@ h3{
 
 .pricing-matrix{
   width: 100%;
-  min-width: 720px;
+  min-width: 640px;
   border-collapse: collapse;
 }
 
@@ -725,7 +725,7 @@ h3{
 }
 
 .pricing-matrix tbody th{
-  width: 24%;
+  width: 38%;
   color: var(--text);
   font-weight: 900;
 }
