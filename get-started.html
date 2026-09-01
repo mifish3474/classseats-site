@@ -9,7 +9,7 @@
     />
     <meta name="robots" content="index,follow" />
     <title>Create Seating Charts in Minutes, Not Hours | ClassSeats</title>
-    <link rel="canonical" href="https://www.classseats.com/get-started.html" />
+    <link rel="canonical" href="https://www.classseats.com/get-started" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Create Seating Charts in Minutes, Not Hours | ClassSeats" />
@@ -17,7 +17,7 @@
       property="og:description"
       content="Built by a teacher. Student data stays yours. Start with a free 45-day Pro trial, set up on your computer in about 2 minutes, then use your phone during class."
     />
-    <meta property="og:url" content="https://www.classseats.com/get-started.html" />
+    <meta property="og:url" content="https://www.classseats.com/get-started" />
     <meta property="og:site_name" content="ClassSeats" />
     <meta property="og:image" content="https://www.classseats.com/media/hero-image.png" />
 
@@ -43,24 +43,26 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="./">
+        <a class="brand" href="/">
           <span class="brand-mark" aria-hidden="true"><img src="./classseats-icon.png" alt="" /></span>
           <span class="brand-name">ClassSeats</span>
         </a>
 
         <nav class="nav nav--desktop">
-          <a href="./privacy.html">Privacy</a>
-          <a href="./ferpa.html">FERPA</a>
-          <a class="button button--ghost" href="./#contact">Contact</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/ferpa">FERPA</a>
+          <a href="/mobile-app">Mobile App</a>
+          <a class="button button--ghost" href="/#contact">Contact</a>
           <a class="button cta-app-link" href="https://app.classseats.app" data-app-cta>Start Free 45-Day Pro Trial</a>
         </nav>
 
         <details class="navMenu">
           <summary class="navMenu__button">Menu</summary>
           <nav class="nav nav--menu">
-            <a href="./privacy.html">Privacy</a>
-            <a href="./ferpa.html">FERPA</a>
-            <a class="button button--ghost" href="./#contact">Contact</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/ferpa">FERPA</a>
+            <a href="/mobile-app">Mobile App</a>
+            <a class="button button--ghost" href="/#contact">Contact</a>
             <a class="button cta-app-link" href="https://app.classseats.app" data-app-cta>Start Free 45-Day Pro Trial</a>
           </nav>
         </details>
@@ -82,7 +84,7 @@
             </div>
 
             <p class="cta-note" id="desktopSetupNote">
-              Start on your computer (2 minutes) to set up your classes. Then use your phone for attendance,
+              No charge for 45 days. Start on your computer (2 minutes) to set up your classes. Then use your phone for attendance,
               notes, and flashcards during class.
             </p>
 
@@ -170,8 +172,8 @@
         <div class="container">
           <div class="sectionTitleRow sectionTitleRow--center">
             <div>
-              <h2>60-Second Demo!</h2>
-              <p class="subhead">A quick look at the workflow teachers care about most.</p>
+              <h2>Roster to Seating Chart in Less Than 60-Seconds!</h2>
+              <p class="subhead">It really is that fast!</p>
             </div>
           </div>
 
@@ -182,7 +184,8 @@
                   <div class="windowDots"><span></span><span></span><span></span></div>
                 </div>
                 <video
-                  src="./media/classseats-demo.mp4"
+                  src="./media/ClassSeats-60Seconds.mp4"
+                  poster="./media/ClassSeats-60Seconds-poster.png"
                   controls
                   playsinline
                   preload="metadata"
@@ -225,7 +228,7 @@
                 depending on how you choose to use the app.
               </p>
               <p class="muted small">
-                Read the full <a href="./privacy.html">Privacy Policy</a> and <a href="./ferpa.html">FERPA information</a>.
+                Read the full <a href="/privacy">Privacy Policy</a> and <a href="/ferpa">FERPA information</a>.
               </p>
             </div>
           </div>
@@ -259,14 +262,16 @@
           <p class="muted small">Google Drive is a trademark of Google LLC.</p>
         </div>
         <div class="footer-links">
-          <a href="./">Home</a>
-          <a href="./district.html">District IT</a>
-          <a href="./pricing.html">Pricing</a>
-          <a href="./privacy.html">Privacy Policy</a>
-          <a href="./ferpa.html">FERPA</a>
-          <a href="./terms.html">Terms of Service</a>
-          <a href="./updates.html">Updates</a>
-          <a href="./#contact">Contact</a>
+          <a href="/">Home</a>
+          <a href="/district">District IT</a>
+          <a href="/pricing">Pricing</a>
+          <a href="/mobile-app">Mobile App</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/account-deletion">Account Deletion</a>
+          <a href="/ferpa">FERPA</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/updates">Updates</a>
+          <a href="/#contact">Contact</a>
         </div>
       </div>
     </footer>
@@ -341,7 +346,7 @@
 
             if (desktopSetupNote) {
               desktopSetupNote.innerHTML =
-                '<strong>Class setup starts on a desktop or laptop.</strong> After that, your phone is ready for attendance, notes, and flashcards during class.';
+                '<strong>Class setup starts on a desktop or laptop.</strong> Start with a free 45-day Pro trial. Your phone is ready for attendance, notes, and flashcards during class.';
             }
 
             if (phoneSetupCard) {
