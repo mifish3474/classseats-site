@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Start a free 45-day ClassSeats Pro trial. Create seating charts, group students, take attendance, and learn names faster with a local-first tool built for real classrooms."
+      content="Create seating charts, group students, take attendance, and learn names with ClassSeats. Start a free 45-day Pro trial."
     />
     <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
     <meta property="og:title" content="Classroom Seating Chart Generator for Teachers | ClassSeats" />
     <meta
       property="og:description"
-      content="Free classroom seating chart generator for teachers. Create seating charts, group students, take attendance, and learn names faster with a local-first tool built for real classrooms."
+      content="Create seating charts, group students, take attendance, and learn names with ClassSeats. Start a free 45-day Pro trial."
     />
     <meta property="og:url" content="https://www.classseats.com/" />
     <meta property="og:site_name" content="ClassSeats" />
@@ -27,11 +27,11 @@
     <meta name="twitter:title" content="Classroom Seating Chart Generator for Teachers | ClassSeats" />
     <meta
       name="twitter:description"
-      content="Free classroom seating chart generator for teachers. Create seating charts, group students, take attendance, and learn names faster with a local-first tool built for real classrooms."
+      content="Create seating charts, group students, take attendance, and learn names with ClassSeats. Start a free 45-day Pro trial."
     />
     <meta name="twitter:image" content="https://www.classseats.com/media/hero-image.png" />
 
-    <link rel="stylesheet" href="./styles.css?v=20260901a" />
+    <link rel="stylesheet" href="./styles.css?v=20260915a" />
     <link rel="icon" href="./classseats-icon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,9 +57,31 @@
             "name": "ClassSeats",
             "applicationCategory": "EducationalApplication",
             "operatingSystem": "Web, Desktop, Mobile",
-            "isAccessibleForFree": false,
+            "isAccessibleForFree": true,
             "url": "https://www.classseats.com/",
-            "description": "Start a free 45-day ClassSeats Pro trial. Create seating charts, group students, take attendance, and learn names faster with a local-first tool built for real classrooms."
+            "description": "Create seating charts, group students, take attendance, and learn names with ClassSeats. Start a free 45-day Pro trial.",
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Free plan — one editable class on desktop",
+                "price": "0",
+                "priceCurrency": "USD",
+                "url": "https://www.classseats.com/pricing"
+              },
+              {
+                "@type": "Offer",
+                "name": "ClassSeats Pro — 2026-27 early adopter annual subscription",
+                "price": "20",
+                "priceCurrency": "USD",
+                "url": "https://www.classseats.com/pricing",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "20",
+                  "priceCurrency": "USD",
+                  "unitText": "teacher per year"
+                }
+              }
+            ]
           },
           {
             "@type": "FAQPage",
@@ -121,6 +143,12 @@
                 }
               }
             ]
+          },
+          {
+            "@type": "Organization",
+            "name": "ClassSeats",
+            "url": "https://www.classseats.com/",
+            "logo": "https://www.classseats.com/classseats-icon.png"
           }
         ]
       }
@@ -165,26 +193,17 @@
       <section class="hero">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow">Built for real classrooms • Classroom seating chart tool • Works offline</p>
+            <p class="eyebrow">Built for real classrooms • Everyday classroom tools • Works offline</p>
 
-            <h1>Classroom Seating Charts in Seconds</h1>
+            <h1>Make every class a little easier.</h1>
 
-            <p class="lead">
-              ClassSeats is a classroom seating chart generator for teachers with a free 45-day Pro trial. Create classroom seating charts, group students, take attendance, and learn names faster with a tool built for real classrooms.
-            </p>
-
-            <p class="lead">
-              Teaching is complex enough. Seating charts, attendance, and learning names shouldn’t add to the mental load.
-            </p>
-
-            <p class="lead">
-              ClassSeats was built by a classroom teacher to simplify the logic puzzle of seating, make learning names easier, and put everyday classroom tools in one place.
-            </p>
+            <p class="lead">Create seating charts based on who works well together, who needs space, and who needs a seat up front. Take attendance, learn names, and keep track of student notes and behavior—all in one place. Built by a classroom teacher to simplify the routines you handle every day.</p>
 
             <p class="lead" style="margin-top: 10px"><strong>Less logistics. More teaching.</strong></p>
 
             <div class="cta-row">
               <a class="button" href="https://app.classseats.app">Start Free 45-Day Pro Trial</a>
+              <a class="button button--ghost" href="#how">See it in action</a>
             </div>
             <p class="cta-note">No charge for 45 days. 2026-27 early adopter pricing is $20 per teacher per year after the trial. Initial setup requires a desktop or laptop.</p>
           </div>
@@ -253,9 +272,41 @@
             <div>
               <h2 class="t-heading">What teachers are saying</h2>
               <div class="t-carousel">
-                <div class="t-card is-visible" id="tCard">
-                  <div class="t-quote-wrapper" id="tQuote"></div>
-                  <p class="t-attrib" id="tAttrib"></p>
+                <div class="t-card is-visible" id="tCard" data-testimonial>
+                  <div class="t-quote-wrapper" id="tQuote"><p>I'm a 31-year teacher veteran, and I've always procrastinated seating charts because I hate the logic puzzle they create. These two need to sit together. These two can't. Some need to be near the board. Others need to be close to my desk.</p><p>ClassSeats has taken what used to be an hours-long job and made it simple. The easy attendance, discipline tracking, student notes, flashcards with photos, and pronunciation recordings are an added bonus. Even my subs love the printable seating charts with pictures.</p></div>
+                  <p class="t-attrib" id="tAttrib">- Lisa, 8th Grade Art</p>
+                </div>
+                <div class="t-card is-visible" data-testimonial>
+                  <div class="t-quote-wrapper"><p>As a substitute teacher, ClassSeats makes me feel confident walking into a classroom. Being able to see student photos and a clear seating chart means I know who is present and who is absent within seconds.</p><p>I can spend less time figuring things out and more time teaching.</p></div>
+                  <p class="t-attrib">- Ryan, 8th Grade Substitute Teacher</p>
+                </div>
+                <div class="t-card is-visible" data-testimonial>
+                  <div class="t-quote-wrapper"><p>I've been loving it. Taking attendance is a breeze, and it's so easy to quickly add behavior data points.</p></div>
+                  <p class="t-attrib">- Bethany, 7th Grade Engineering</p>
+                </div>
+                <div class="t-card is-visible" data-testimonial>
+                  <div class="t-quote-wrapper"><p>This app has been a real game changer for me!  It saves me so much time.  I can make new seating charts with the push of a key.  It is easy to edit and create different  variations.  I don't have to worry that I left a student off the chart or spelled their name wrong or put them next to somebody that they are not supposed to sit next to. I now have attendance, rosters and seating charts all in one place.  I love it!  So glad I found this app!</p></div>
+                  <p class="t-attrib">- Sharon, 7th Grade Science</p>
+                </div>
+                <div class="t-card is-visible" data-testimonial>
+                  <div class="t-quote-wrapper"><p>Before ClassSeats, seating charts were the bane of my existence--the least favorite part of my job. I hated spending hours trying to figure out who to put where, erase and move people countless times, and think, change, think, change, only to do it all over again a few weeks later. Now, I have the flexibility to offer a change in seats more frequently, as well as to allow students to have more choice in their seating preferences.  I spent about 15 minutes creating my seating charts instead of the typical 1-2 hours accompanied by countless headaches. </p><p>I also love how I can do record keeping (ie - attendance, ready to learn points, etc.) all in one place.</p></div>
+                  <p class="t-attrib">- Dawn, 7th Grade Language Arts</p>
+                </div>
+                <div class="t-card is-visible" data-testimonial>
+                  <div class="t-quote-wrapper"><p>ClassSeats has been a time-saver when it comes to creating seating charts.  Rather than having to use a lot of &quot;brain power&quot; to come up with my own, ClassSeats allows me to use student voice to assist with placements, and does those placements at the click of a button!  Not only this, but the program has allowed me to elevate my ability to communicate with both students and parents about student behavior.  </p><p>I can quickly track absences, behavior incidents, etc. and refer back as a running record, which has helped better inform conversations and elevate my ability to work with families.</p></div>
+                  <p class="t-attrib">- Jillian, 7th Grade Language Arts</p>
+                </div>
+                <div class="t-card is-visible" data-testimonial>
+                  <div class="t-quote-wrapper"><p>One of the 'invisible' parts of teaching is making seating charts. As a teacher, we can all sympathize that sometimes it is a total headache. Using ClassSeats has become a massive time-saver and smart, intuitive solution. It is incredibly user-friendly and checks all the boxes of what every teacher needs to think of. </p><p>I would recommend it to any educator looking to reclaim time!</p></div>
+                  <p class="t-attrib">- Savannah, 8th Grade Science</p>
+                </div>
+                <div class="t-card is-visible" data-testimonial>
+                  <div class="t-quote-wrapper"><p>Before I started using ClassSeats, the mental gymnastics involved in balancing behavior and educational needs when creating seating charts or groups could be pretty overwhelming.  Now, it's much easier to organize seating and groups in a way that feels thoughful while considering personalities, learning needs, and classroom dynamics.  The process is much quicker, and I don't feel like I'm constantly second-guessing my decisions.</p><p>ClassSeats saves me time whenever I need to rearrange seating or create new groups.  The students now get new seats more often, which they are happy about, and I no longer avoid one of my least favorite tasks as a teacher.</p></div>
+                  <p class="t-attrib">- Rachel, 7th Grade Science</p>
+                </div>
+                <div class="t-card is-visible" data-testimonial>
+                  <div class="t-quote-wrapper"><p>What I especially love about the seating chart creation is that I can put in my requirements, such as having certain students sitting close together or apart, sitting in preferred seating that I designate, marked has having accommodations, etc. one time (always with the option to edit, as needed.) All seating plans then take these requirements into account.  Big time-saver!</p></div>
+                  <p class="t-attrib">- Kristin, K-8, Specials</p>
                 </div>
               </div>
             </div>
@@ -488,8 +539,7 @@
         </div>
       </div>
     </footer>
-    <script src="./testimonials.js?v=20260224a"></script>
-    <script src="./testimonial-rotator.js?v=20260224g"></script>
+    <script src="./testimonial-rotator.js?v=20260915a"></script>
     <script src="./site.js?v=20260901a"></script>
   </body>
 </html>

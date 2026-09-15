@@ -578,6 +578,14 @@ h3{
   opacity: 1;
 }
 
+.t-card + .t-card{
+  margin-top: 16px;
+}
+
+#how{
+  scroll-margin-top: 120px;
+}
+
 .t-card.is-hidden{
   opacity: 0;
 }
@@ -733,6 +741,31 @@ h3{
   width: 38%;
   color: var(--text);
   font-weight: 900;
+}
+
+.pricing-matrix tr > :last-child{
+  background: rgba(109,40,217,.07);
+  border-left: 2px solid var(--brand);
+}
+
+.pricing-matrix thead th:last-child{
+  color: var(--brand);
+  background: rgba(109,40,217,.12);
+}
+
+.pricing-badge{
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(109,40,217,.1);
+  color: var(--brand);
+  font-weight: 800;
+}
+
+.pricing-rate{
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
 }
 
 .matrix-mark{
