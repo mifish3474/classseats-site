@@ -1,5 +1,11 @@
 (function () {
-  const items = window.CLASSSEATS_TESTIMONIALS || [];
+  const cards = Array.from(document.querySelectorAll("[data-testimonial]"));
+  const items = cards.map(function (card) {
+    return {
+      quote: Array.from(card.querySelectorAll(".t-quote-wrapper p")).map(function (p) { return p.textContent; }).join("\n\n"),
+      attribution: card.querySelector(".t-attrib").textContent
+    };
+  });
   if (!items.length) return;
 
   const quoteEl = document.getElementById("tQuote");
@@ -7,6 +13,8 @@
   const cardEl = document.getElementById("tCard");
   const carouselEl = cardEl ? cardEl.closest(".t-carousel") : null;
   if (!quoteEl || !attribEl || !cardEl || !carouselEl) return;
+
+  cards.slice(1).forEach(function (card) { card.hidden = true; });
 
   const canAnimate = typeof cardEl.animate === "function";
   const FADE_MS = 900;
@@ -32,7 +40,7 @@
       targetQuoteEl.appendChild(el);
     });
 
-    targetAttribEl.textContent = `- ${t.name}, ${t.role}`;
+    targetAttribEl.textContent = t.attribution;
   }
 
   function render(idx) {
