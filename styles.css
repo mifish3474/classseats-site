@@ -539,6 +539,28 @@ h3{
   flex-wrap:wrap;
 }
 
+.dpa-notice p{
+  margin: 0;
+  flex: 1 1 480px;
+}
+
+.dpa-notice .text-link{
+  font-weight: 700;
+}
+
+.dpa-callout{
+  margin: 18px 0 22px;
+  scroll-margin-top: 160px;
+}
+
+.prose .dpa-callout h2{
+  margin-top: 0;
+}
+
+.prose .dpa-callout .button{
+  color: #fff;
+}
+
 /* ---------- Testimonials carousel ---------- */
 
 .t-heading{
